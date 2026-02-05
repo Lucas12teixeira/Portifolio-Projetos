@@ -1,0 +1,207 @@
+# American Teens - API .htaccess Configuration
+# This file configures Apache to route all API requests through index.php
+
+# ============================================
+# ENABLE REWRITE ENGINE
+# ============================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # ============================================
+    # API ROUTING
+    # ============================================
+    
+    # Route all requests to index.php unless file/directory exists
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?path=$1 [QSA,L]
+    
+</IfModule>
+
+# ============================================
+# SECURITY
+# ============================================
+
+# Deny access to sensitive files
+<FilesMatch "^(config\.php|\.env|composer\.json|composer\.lock|\.git)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to PHP files in subdirectories (except index.php)
+<FilesMatch "^(?!index\.php$).+\.php$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Deny access to .htaccess and .htpasswd
+<Files ~ "^\.ht">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# ============================================
+# SECURITY HEADERS
+# ============================================
+
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevent MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Remove X-Powered-By header
+    Header unset X-Powered-By
+    
+    # CORS Headers (adjust as needed)
+    Header always set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+    Header always set Access-Control-Max-Age "3600"
+</IfModule>
+
+# ============================================
+# PHP SETTINGS
+# ============================================
+
+<IfModule mod_php7.c>
+    # File upload limits
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_value memory_limit 256M
+    
+    # Session settings
+    php_value session.gc_maxlifetime 86400
+    php_value session.cookie_httponly 1
+    php_value session.use_strict_mode 1
+    
+    # Error handling
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log logs/error.log
+</IfModule>
+
+# ============================================
+# COMPRESSION
+# ============================================
+
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+</IfModule>
+
+# ============================================
+# CACHING
+# ============================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Default expiration: 1 hour
+    ExpiresDefault "access plus 1 hour"
+    
+    # JSON files: no cache
+    ExpiresByType application/json "access plus 0 seconds"
+    
+    # Text files: 1 hour
+    ExpiresByType text/plain "access plus 1 hour"
+</IfModule>
+
+# ============================================
+# CHARACTER ENCODING
+# ============================================
+
+# Set default charset to UTF-8
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .php .js .json
+
+# ============================================
+# ERROR DOCUMENTS
+# ============================================
+
+# Custom error pages (optional)
+# ErrorDocument 404 /api/errors/404.php
+# ErrorDocument 500 /api/errors/500.php
+
+# ============================================
+# DIRECTORY OPTIONS
+# ============================================
+
+# Disable directory browsing
+Options -Indexes
+
+# Follow symbolic links
+Options +FollowSymLinks
+
+# ============================================
+# HTTPS REDIRECT (Production)
+# ============================================
+
+# Uncomment these lines in production to force HTTPS
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# ============================================
+# RATE LIMITING (Requires mod_evasive)
+# ============================================
+
+# <IfModule mod_evasive20.c>
+#     DOSHashTableSize 3097
+#     DOSPageCount 5
+#     DOSSiteCount 100
+#     DOSPageInterval 1
+#     DOSSiteInterval 1
+#     DOSBlockingPeriod 60
+# </IfModule>
+
+# ============================================
+# IP BLOCKING (Example)
+# ============================================
+
+# Block specific IPs
+# <Limit GET POST>
+#     Order allow,deny
+#     Allow from all
+#     Deny from 123.456.789.0
+#     Deny from 98.765.432.1
+# </Limit>
+
+# ============================================
+# MAINTENANCE MODE
+# ============================================
+
+# Uncomment to enable maintenance mode
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#     RewriteCond %{REQUEST_URI} !^/maintenance\.html$ [NC]
+#     RewriteRule .* /maintenance.html [R=503,L]
+# </IfModule>
+
+# ============================================
+# END OF CONFIGURATION
+# ============================================

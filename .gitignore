@@ -1,0 +1,184 @@
+# ===================================
+# Portifolio-Projetos - Git Ignore
+# ===================================
+
+# ===================================
+# Arquivos Temporários e de Sistema
+# ===================================
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===================================
+# Arquivos de Edição
+# ===================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# ===================================
+# Logs e Debug
+# ===================================
+*.log
+logs/
+debug.log
+npm-debug.log*
+yarn-debug.log*
+
+# ===================================
+# Arquivos Pessoais (não committar)
+# ===================================
+# Notas pessoais
+NOTAS_PESSOAIS.md
+TODO_PRIVADO.md
+RASCUNHO*.md
+
+# Backups
+*.bak
+*.backup
+backup/
+backups/
+
+# ===================================
+# Dados Sensíveis (IMPORTANTE!)
+# ===================================
+# Nunca commite estes arquivos!
+*.env
+.env.local
+.env.production
+config.local.*
+credentials.json
+secrets.json
+
+# Configurações com dados reais
+**/config.php
+!**/config.example.php
+
+# ===================================
+# Arquivos Grandes
+# ===================================
+# Vídeos grandes (use Git LFS se necessário)
+*.mp4
+*.avi
+*.mov
+
+# Arquivos ZIP grandes
+*.zip
+*.rar
+*.7z
+
+# ===================================
+# Dependências (se usar)
+# ===================================
+node_modules/
+vendor/
+bower_components/
+
+# ===================================
+# Build e Compilados
+# ===================================
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# ===================================
+# Cache
+# ===================================
+cache/
+.cache/
+*.cache
+
+# ===================================
+# Uploads de Teste
+# ===================================
+# Mantenha apenas exemplos, não uploads reais
+**/uploads/*
+!**/uploads/.gitkeep
+!**/uploads/README.md
+
+# ===================================
+# Databases
+# ===================================
+*.db
+*.sqlite
+*.sql
+# Exceto schemas e exemplos
+!schema.sql
+!example-data.sql
+
+# ===================================
+# Arquivos Específicos do Windows
+# ===================================
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ===================================
+# Arquivos Específicos do macOS
+# ===================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===================================
+# Arquivos Específicos do Linux
+# ===================================
+*~
+.directory
+
+# ===================================
+# Documentação Gerada
+# ===================================
+/docs/generated/
+/api-docs/generated/
+
+# ===================================
+# Testes
+# ===================================
+coverage/
+.nyc_output/
+test-results/
+
+# ===================================
+# IMPORTANTE: Arquivos de Portfólio
+# ===================================
+# NÃO ignore estas pastas - são seu portfólio!
+# Cada projeto deve ter seu próprio .gitignore
+
+# Mantenha:
+# - README.md (todos)
+# - Documentação
+# - Screenshots
+# - Diagramas
+# - Exemplos de código
+
+# Ignore:
+# - Código-fonte completo (se não quiser compartilhar)
+# - Dados reais de usuários
+# - Credenciais de produção
+
+# ===================================
+# Personalização
+# ===================================
+# Adicione seus próprios padrões abaixo:
