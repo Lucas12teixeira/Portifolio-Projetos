@@ -436,9 +436,9 @@ Desenvolvedor Full-Stack | Entusiasta de PWA | Integração Fé-Tecnologia
 Precisa de ajuda ou quer discutir o projeto?
 
 - 📚 **Documentação**: Verifique a pasta [docs/pt/](docs/pt/)
-- 💼 **LinkedIn**: [Conecte-se comigo](https://linkedin.com/in/seuperfil)
-- 📧 **Email**: seu.email@example.com
-- 🌐 **Portfolio**: [erldev.com.br](https://erldev.com.br)
+- 💼 **LinkedIn**: https://www.linkedin.com/in/lucas-lima-10218529a/
+- 📧 **Email**:  lucas12teixeira@gmail.com
+- 🌐 **Portfolio**:  https://github.com/Lucas12teixeira
 
 ---
 
