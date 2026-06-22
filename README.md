@@ -45,9 +45,24 @@ Bem-vindo ao meu portfólio de projetos! Este repositório contém documentaçã
 
 ---
 
-### 2. 🚀 [Próximo Projeto]
+### 2. 🏢 GynConect - Sistema de Gestão Comercial
 
-Em breve...
+**Sistema Web para equipes de vendas externas com modelo de consignação**
+
+[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](GynConect%20Portfolio/)
+
+**Stack**: PHP, MySQL, JavaScript Vanilla, PWA, REST API  
+**Status**: ✅ Produção  
+
+**Destaques**:
+- 📦 Controle de consignação com trilha de auditoria
+- 🛒 Vendas com assinatura digital do cliente
+- 📊 Dashboard com KPIs financeiros em tempo real
+- 🔐 RBAC com 4 níveis de acesso
+- 📱 PWA com suporte offline para uso em campo
+- 📄 Exportação nativa de PDF e Excel
+
+[📖 Ver Documentação Completa →](GynConect%20Portfolio/README.md)
 
 ---
 
@@ -91,10 +106,10 @@ Em breve...
 
 | Métrica | Valor |
 |---------|-------|
-| 📁 **Projetos Completados** | 1+ (em expansão) |
-| 💻 **Linhas de Código** | 15.000+ |
-| ⏱️ **Horas de Desenvolvimento** | 500+ |
-| 🚀 **Projetos em Produção** | 1 |
+| 📁 **Projetos Completados** | 2 |
+| 💻 **Linhas de Código** | 30.000+ |
+| ⏱️ **Horas de Desenvolvimento** | 1.000+ |
+| 🚀 **Projetos em Produção** | 2 |
 | ⭐ **Pontuação Média Lighthouse** | 92/100 |
 
 </div>
@@ -165,20 +180,19 @@ A documentação neste repositório está disponível sob licença Creative Comm
 
 ### Por Tecnologia
 
-- **PHP Projects**: [American Teens](American%20Teens%20Portifolio/)
-- **JavaScript Projects**: [American Teens](American%20Teens%20Portifolio/)
-- **PWA Projects**: [American Teens](American%20Teens%20Portifolio/)
+- **PHP Projects**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **JavaScript Vanilla**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **PWA Projects**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
 
 ### Por Tipo
 
-- **Full-Stack**: [American Teens](American%20Teens%20Portifolio/)
-- **Backend**: Em breve...
-- **Frontend**: Em breve...
+- **Full-Stack**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **Comunidade / Social**: [American Teens](American%20Teens%20Portifolio/)
+- **Gestão Comercial**: [GynConect](GynConect%20Portfolio/)
 
 ### Por Status
 
-- **Produção**: [American Teens](American%20Teens%20Portifolio/)
-- **Em Desenvolvimento**: Em breve...
+- **Produção**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
 
 ---
 
