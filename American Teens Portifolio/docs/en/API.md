@@ -1,4 +1,4 @@
-# 📡 API Documentation
+﻿# 📡 API Documentation
 
 Complete reference for the American Teens REST API.
 
@@ -24,7 +24,7 @@ Complete reference for the American Teens REST API.
 
 **Production:**
 ```
-https://americateens.erldev.com.br/api
+https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api
 ```
 
 **Development:**
@@ -1315,7 +1315,7 @@ Subscribe to real-time events:
 
 For API support:
 - **Documentation**: [README.md](README.md)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/american-teens/issues)
+- **Issues**: [GitHub Issues](https://github.com/Lucas12teixeira/american-teens/issues)
 - **Email**: api@americateens.com
 
 ---

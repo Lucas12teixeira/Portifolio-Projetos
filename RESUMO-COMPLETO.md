@@ -1,4 +1,4 @@
-# 🎉 PORTFÓLIO COMPLETO CRIADO! 
+﻿# 🎉 PORTFÓLIO COMPLETO CRIADO! 
 
 ## ✅ Resumo do Que Foi Feito
 
@@ -154,7 +154,7 @@ Encontre e substitua em TODOS os arquivos:
 "yourusername" → seugithubreal
 "seugithub" → seugithubreal
 "seuperfil" → seulinkedinreal
-"seu.email@example.com" → seu.email@real.com
+"lucas12teixeira@gmail.com" → seu.email@real.com
 "seunumero" → seuwhatsappreal
 ```
 
@@ -338,7 +338,7 @@ git push
 ### No CV
 
 ```
-GitHub Portfolio: github.com/seugithub/Portifolio-Projetos
+GitHub Portfolio: github.com/Lucas12teixeira/Portifolio-Projetos
 ```
 
 ### No LinkedIn

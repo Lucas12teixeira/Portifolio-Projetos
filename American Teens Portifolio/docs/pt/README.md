@@ -1,4 +1,4 @@
-# 🌟 American Teens - Plataforma Digital Comunitária
+﻿# 🌟 American Teens - Plataforma Digital Comunitária
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 [![PRs Bem-vindos](https://img.shields.io/badge/PRs-bem--vindos-brightgreen.svg)](CONTRIBUINDO.md)
 [![Feito com Amor](https://img.shields.io/badge/Feito%20com-❤️-red.svg)](https://github.com)
 
-[Demo](https://americateens.erldev.com.br) • [Documentação](../) • [Referência da API](API.md) • [Contribuir](CONTRIBUINDO.md)
+[Demo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos) • [Documentação](../) • [Referência da API](API.md) • [Contribuir](CONTRIBUINDO.md)
 
 </div>
 

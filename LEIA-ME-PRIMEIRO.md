@@ -1,4 +1,4 @@
-# 🎯 LEIA-ME PRIMEIRO!
+﻿# 🎯 LEIA-ME PRIMEIRO!
 
 ## ✅ Seu Portfólio Está Completo!
 
@@ -72,9 +72,9 @@ Antes de publicar, DELETE estes arquivos:
 "yourusername" → Seu usuário GitHub real
 "seugithub" → Seu usuário GitHub real
 "seuperfil" → Seu perfil LinkedIn real
-"seu.email@example.com" → Seu email real
+"lucas12teixeira@gmail.com" → Seu email real
 "seunumero" → Seu WhatsApp real
-"https://erldev.com.br" → Seu site real
+"https://github.com/Lucas12teixeira/Portifolio-Projetos" → Seu site real
 ```
 
 **Arquivos para editar**:
@@ -162,7 +162,7 @@ Portifolio-Projetos/
 
 1. **Link no CV**:
    ```
-   GitHub: github.com/seugithub/Portifolio-Projetos
+   GitHub: github.com/Lucas12teixeira/Portifolio-Projetos
    ```
 
 2. **No LinkedIn**:

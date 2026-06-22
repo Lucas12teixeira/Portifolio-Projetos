@@ -1,4 +1,4 @@
-# 🌟 American Teens - Plataforma Digital de Comunidade
+﻿# 🌟 American Teens - Plataforma Digital de Comunidade
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-blue)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange)](https://mysql.com)
 
-[🚀 Demo ao Vivo](https://americateens.erldev.com.br) • [📚 Documentação](docs/pt/)
+[🚀 Demo ao Vivo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos) • [📚 Documentação](docs/pt/)
 
 </div>
 
@@ -405,10 +405,10 @@ Tempos de Carregamento:
 
 Desenvolvedor Full-Stack | Entusiasta de PWA | Integração Fé-Tecnologia
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seugithub)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seuperfil)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://erldev.com.br)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas12teixeira)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
 
 **"Construindo tecnologia que une comunidades"**
 
@@ -465,7 +465,7 @@ Se este projeto te ajudou ou impressionou, considere:
 
 ---
 
-Desenvolvido com ❤️ e ☕ por [Lucas (Erl Dev)](https://erldev.com.br)
+Desenvolvido com ❤️ e ☕ por [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 *Conectando fé e tecnologia, uma linha de código por vez*
 

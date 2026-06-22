@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+﻿# Contributor Covenant Code of Conduct
 
 ## 📜 Our Pledge
 
@@ -60,7 +60,7 @@ representative at an online or offline event.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at:
 
-📧 **your.email@example.com**
+📧 **lucas12teixeira@gmail.com**
 
 All complaints will be reviewed and investigated promptly and fairly.
 
@@ -147,9 +147,9 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 If you have questions or concerns, please reach out to:
 
-- 📧 Email: your.email@example.com
-- 💬 GitHub Discussions: [Project Discussions](https://github.com/yourusername/american-teens/discussions)
-- 🐛 Issues: [Report an Issue](https://github.com/yourusername/american-teens/issues)
+- 📧 Email: lucas12teixeira@gmail.com
+- 💬 GitHub Discussions: [Project Discussions](https://github.com/Lucas12teixeira/american-teens/discussions)
+- 🐛 Issues: [Report an Issue](https://github.com/Lucas12teixeira/american-teens/issues)
 
 ---
 

@@ -1,4 +1,4 @@
-# 🌟 American Teens - Digital Community Platform
+﻿# 🌟 American Teens - Digital Community Platform
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com)
 
-[Demo](https://americateens.erldev.com.br) • [Documentation](docs/) • [API Reference](API.md) • [Contributing](CONTRIBUTING.md)
+[Demo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos) • [Documentation](docs/) • [API Reference](API.md) • [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -200,7 +200,7 @@ This platform addresses the modern need for digital community engagement in reli
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/american-teens.git
+git clone https://github.com/Lucas12teixeira/american-teens.git
 cd american-teens
 ```
 
@@ -572,10 +572,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/american-teens?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/american-teens?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/american-teens)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/american-teens)
+![GitHub stars](https://img.shields.io/github/stars/Lucas12teixeira/Portifolio-Projetos?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Lucas12teixeira/Portifolio-Projetos?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Lucas12teixeira/Portifolio-Projetos)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Lucas12teixeira/Portifolio-Projetos)
 
 ---
 

@@ -1,4 +1,4 @@
-# 🎨 American Teens - Project Showcase
+﻿# 🎨 American Teens - Project Showcase
 
 ## 📱 Portfolio Project Highlights
 
@@ -288,9 +288,9 @@ This project provides:
 ## 🔗 Live Demo & Links
 
 ### Try It Out
-- **Live Application**: [americateens.erldev.com.br](https://americateens.erldev.com.br)
+- **Live Application**: [americateens.github.com/Lucas12teixeira/Portifolio-Projetos](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 - **Documentation**: [Project Docs](docs/)
-- **Source Code**: [GitHub Repository](https://github.com/yourusername/american-teens)
+- **Source Code**: [GitHub Repository](https://github.com/Lucas12teixeira/american-teens)
 
 ### Test Credentials
 For demo purposes (if applicable):
@@ -304,10 +304,10 @@ Password: Demo123!
 ## 📞 Contact & Availability
 
 ### Professional Inquiries
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
-- **Portfolio**: [erldev.com.br](https://erldev.com.br)
+- **GitHub**: [@Lucas12teixeira](https://github.com/Lucas12teixeira)
+- **LinkedIn**: [Your Profile](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- **Email**: lucas12teixeira@gmail.com
+- **Portfolio**: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 ### Open for
 - Full-time positions
@@ -348,6 +348,6 @@ If you found this project interesting, please consider:
 - 💬 Providing feedback
 - 🤝 Connecting professionally
 
-[View on GitHub](https://github.com/yourusername/american-teens) • [Visit Live Site](https://americateens.erldev.com.br)
+[View on GitHub](https://github.com/Lucas12teixeira/american-teens) • [Visit Live Site](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 
 </div>

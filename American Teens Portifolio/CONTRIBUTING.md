@@ -1,4 +1,4 @@
-# 🤝 Contributing to American Teens
+﻿# 🤝 Contributing to American Teens
 
 First off, **thank you** for considering contributing to American Teens! 🎉 It's people like you that make this project a great tool for youth communities worldwide.
 
@@ -21,7 +21,7 @@ Following these guidelines helps to communicate that you respect the time of the
 
 ## 📜 Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to your.email@example.com.
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to lucas12teixeira@gmail.com.
 
 ---
 
@@ -58,7 +58,7 @@ Before you begin, ensure you have:
 
 ### 🐛 Reporting Bugs
 
-Before creating bug reports, please check the [existing issues](https://github.com/yourusername/american-teens/issues) to avoid duplicates.
+Before creating bug reports, please check the [existing issues](https://github.com/Lucas12teixeira/american-teens/issues) to avoid duplicates.
 
 **When submitting a bug report, include:**
 
@@ -70,7 +70,7 @@ Before creating bug reports, please check the [existing issues](https://github.c
 - Error messages or console logs
 
 **Use our bug report template:**
-[Create Bug Report](https://github.com/yourusername/american-teens/issues/new?template=bug_report.md)
+[Create Bug Report](https://github.com/Lucas12teixeira/american-teens/issues/new?template=bug_report.md)
 
 ### ✨ Suggesting Features
 
@@ -88,7 +88,7 @@ Feature suggestions are welcome! Before creating a feature request:
 - Mockups or examples (if applicable)
 
 **Use our feature request template:**
-[Request Feature](https://github.com/yourusername/american-teens/issues/new?template=feature_request.md)
+[Request Feature](https://github.com/Lucas12teixeira/american-teens/issues/new?template=feature_request.md)
 
 ### 📝 Improving Documentation
 
@@ -102,7 +102,7 @@ Documentation improvements are always appreciated! This includes:
 ### 🔨 Contributing Code
 
 **Good First Issues:**
-Look for issues labeled [`good first issue`](https://github.com/yourusername/american-teens/labels/good%20first%20issue) - these are great for newcomers!
+Look for issues labeled [`good first issue`](https://github.com/Lucas12teixeira/american-teens/labels/good%20first%20issue) - these are great for newcomers!
 
 **Areas that need help:**
 - Frontend components
@@ -509,7 +509,7 @@ docs/
 
 - 💬 **GitHub Discussions**: Ask questions, share ideas
 - 🐛 **Issues**: Report bugs, request features
-- 📧 **Email**: your.email@example.com
+- 📧 **Email**: lucas12teixeira@gmail.com
 - 💼 **LinkedIn**: Connect with maintainers
 
 ### Recognition
@@ -640,8 +640,8 @@ Top contributors will be featured in:
 
 Don't hesitate to ask for help:
 
-- 💬 [GitHub Discussions](https://github.com/yourusername/american-teens/discussions)
-- 📧 Email: your.email@example.com
+- 💬 [GitHub Discussions](https://github.com/Lucas12teixeira/american-teens/discussions)
+- 📧 Email: lucas12teixeira@gmail.com
 - 📖 Check existing [documentation](docs/)
 
 ---

@@ -1,4 +1,4 @@
-# 🎯 Guia de Portfólio - Plataforma American Teens
+﻿# 🎯 Guia de Portfólio - Plataforma American Teens
 
 ## Visão Rápida
 
@@ -13,7 +13,7 @@
 - ✅ **Arquitetura PWA** - Instalável, funciona offline, otimizado para mobile
 - ✅ **Chat em Tempo Real** - Sistema de mensagens totalmente funcional com 2.000+ linhas de código
 - ✅ **Autenticação Segura** - Baseada em JWT com refresh tokens e controle de acesso por função
-- ✅ **Deployado em Produção** - Ao vivo em https://americateens.erldev.com.br
+- ✅ **Deployado em Produção** - Ao vivo em https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos
 - ✅ **Banco de Dados MySQL** - Bem estruturado com 15+ tabelas e índices otimizados
 - ✅ **API RESTful** - 50+ endpoints com documentação abrangente
 
@@ -199,7 +199,7 @@ Demonstra:
 
 ## 📞 Elevator Pitch (30 segundos)
 
-> "Construí **American Teens**, uma Progressive Web App em produção servindo comunidades jovens. É uma plataforma full-stack com chat em tempo real, gestão de eventos e ferramentas de crescimento espiritual. Construída com JavaScript vanilla (sem frameworks), backend PHP e banco de dados MySQL. O projeto demonstra minha habilidade de arquitetar sistemas escaláveis, depurar problemas complexos e entregar aplicações de nível de produção. Documentei tudo extensivamente, facilitando a integração e contribuição de equipes. Confira a demo ao vivo em americateens.erldev.com.br"
+> "Construí **American Teens**, uma Progressive Web App em produção servindo comunidades jovens. É uma plataforma full-stack com chat em tempo real, gestão de eventos e ferramentas de crescimento espiritual. Construída com JavaScript vanilla (sem frameworks), backend PHP e banco de dados MySQL. O projeto demonstra minha habilidade de arquitetar sistemas escaláveis, depurar problemas complexos e entregar aplicações de nível de produção. Documentei tudo extensivamente, facilitando a integração e contribuição de equipes. Confira a demo ao vivo em americateens.github.com/Lucas12teixeira/Portifolio-Projetos"
 
 ---
 

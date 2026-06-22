@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide
+﻿# 🚀 Quick Start Guide
 
 Get American Teens up and running in under 10 minutes!
 
@@ -153,7 +153,7 @@ sudo systemctl restart apache2
 - **Full Installation**: [INSTALLATION.md](INSTALLATION.md)
 - **Configuration**: [INSTALLATION.md#configuration](INSTALLATION.md#configuration)
 - **Deployment**: [INSTALLATION.md#deployment](INSTALLATION.md#deployment)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/american-teens/issues)
+- **Issues**: [GitHub Issues](https://github.com/Lucas12teixeira/american-teens/issues)
 
 ---
 
@@ -161,7 +161,7 @@ sudo systemctl restart apache2
 
 American Teens is now running locally. Start exploring and building your community!
 
-**Questions?** Check the [documentation](docs/) or [open an issue](https://github.com/yourusername/american-teens/issues/new).
+**Questions?** Check the [documentation](docs/) or [open an issue](https://github.com/Lucas12teixeira/american-teens/issues/new).
 
 ---
 

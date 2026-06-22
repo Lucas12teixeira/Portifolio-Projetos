@@ -1,4 +1,4 @@
-# 🏗️ Arquitetura do Sistema
+﻿# 🏗️ Arquitetura do Sistema
 
 ## Índice
 - [Visão Geral](#visão-geral)
@@ -756,7 +756,7 @@ function escapeHtml(text) {
 
 ```php
 // Restringir origens permitidas em produção
-$allowed_origins = ['https://americateens.erldev.com.br'];
+$allowed_origins = ['https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos'];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
 if (in_array($origin, $allowed_origins)) {

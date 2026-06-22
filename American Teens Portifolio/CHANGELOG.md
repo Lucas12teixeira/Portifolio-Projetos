@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -224,4 +224,4 @@ To contribute to the changelog:
 For more information, see:
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Documentation](docs/)
-- [GitHub Releases](https://github.com/yourusername/american-teens/releases)
+- [GitHub Releases](https://github.com/Lucas12teixeira/american-teens/releases)

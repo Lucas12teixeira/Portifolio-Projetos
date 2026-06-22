@@ -1,4 +1,4 @@
-# 🎯 American Teens - Project Summary
+﻿# 🎯 American Teens - Project Summary
 
 ## One-Page Project Overview
 
@@ -6,7 +6,7 @@
 **Type**: Progressive Web Application (PWA)  
 **Purpose**: Youth ministry community management and engagement  
 **Status**: ✅ Live in Production  
-**Demo**: [americateens.erldev.com.br](https://americateens.erldev.com.br)  
+**Demo**: [americateens.github.com/Lucas12teixeira/Portifolio-Projetos](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)  
 
 ---
 
@@ -126,7 +126,7 @@
 ## 🚀 Deployment
 
 - **Hosting**: KingHost (shared hosting)
-- **Domain**: americateens.erldev.com.br
+- **Domain**: americateens.github.com/Lucas12teixeira/Portifolio-Projetos
 - **SSL**: Let's Encrypt (HTTPS)
 - **Server**: Apache 2.4
 - **Monitoring**: Custom error logging + performance tracking
@@ -180,8 +180,8 @@ async function sendMessage(userId, message) {
 
 ## 🔗 Resources
 
-- **Live Demo**: [americateens.erldev.com.br](https://americateens.erldev.com.br)
-- **Source Code**: [GitHub Repository](https://github.com/yourusername/american-teens)
+- **Live Demo**: [americateens.github.com/Lucas12teixeira/Portifolio-Projetos](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
+- **Source Code**: [GitHub Repository](https://github.com/Lucas12teixeira/american-teens)
 - **Documentation**: [Full Docs](docs/)
 - **Portfolio**: [PORTFOLIO.md](PORTFOLIO.md)
 
@@ -192,10 +192,10 @@ async function sendMessage(userId, message) {
 **Lucas (Erl Dev)**  
 Full-Stack Developer | PWA Specialist | Faith-Tech Integration
 
-- 🌐 Portfolio: [erldev.com.br](https://erldev.com.br)
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+- 🌐 Portfolio: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+- 💼 LinkedIn: [Your Profile](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- 📧 Email: lucas12teixeira@gmail.com
+- 🐙 GitHub: [@Lucas12teixeira](https://github.com/Lucas12teixeira)
 
 ---
 
@@ -248,10 +248,10 @@ This project is ideal for demonstrating:
 
 Interested in discussing this project or potential opportunities?
 
-- 📧 **Email**: your.email@example.com
-- 💼 **LinkedIn**: [Connect with me](https://linkedin.com/in/yourprofile)
-- 🐙 **GitHub**: [Follow my work](https://github.com/yourusername)
-- 🌐 **Portfolio**: [More projects](https://erldev.com.br)
+- 📧 **Email**: lucas12teixeira@gmail.com
+- 💼 **LinkedIn**: [Connect with me](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- 🐙 **GitHub**: [Follow my work](https://github.com/Lucas12teixeira)
+- 🌐 **Portfolio**: [More projects](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 ---
 
@@ -259,6 +259,6 @@ Interested in discussing this project or potential opportunities?
 
 **⭐ Star this project on GitHub if you found it interesting!**
 
-[View Full README](README.md) • [Installation Guide](INSTALLATION.md) • [Live Demo](https://americateens.erldev.com.br)
+[View Full README](README.md) • [Installation Guide](INSTALLATION.md) • [Live Demo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 
 </div>

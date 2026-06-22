@@ -1,4 +1,4 @@
-# 📤 Publishing Your Portfolio to GitHub
+﻿# 📤 Publishing Your Portfolio to GitHub
 
 Complete checklist for making your American Teens project public.
 
@@ -37,9 +37,9 @@ Replace placeholder information with YOUR details:
 
 **In README.md:**
 ```markdown
-- GitHub: @yourusername → @YourActualUsername
+- GitHub: @Lucas12teixeira → @YourActualUsername
 - LinkedIn: yourprofile → your-actual-profile
-- Email: your.email@example.com → your.real@email.com
+- Email: lucas12teixeira@gmail.com → your.real@email.com
 - Portfolio: yourportfolio.com → your-actual-site.com
 ```
 

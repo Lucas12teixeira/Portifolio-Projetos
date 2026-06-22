@@ -1,4 +1,4 @@
-# 📦 Installation Guide - American Teens
+﻿# 📦 Installation Guide - American Teens
 
 Complete guide for installing and configuring the American Teens platform.
 
@@ -54,7 +54,7 @@ Complete guide for installing and configuring the American Teens platform.
 
 ```bash
 # 1. Clone and navigate
-git clone https://github.com/yourusername/american-teens.git
+git clone https://github.com/Lucas12teixeira/american-teens.git
 cd american-teens
 
 # 2. Create database
@@ -81,13 +81,13 @@ php -S localhost:8000
 **Option A: Clone with Git (Recommended)**
 
 ```bash
-git clone https://github.com/yourusername/american-teens.git
+git clone https://github.com/Lucas12teixeira/american-teens.git
 cd american-teens
 ```
 
 **Option B: Download ZIP**
 
-1. Download ZIP from [GitHub Releases](https://github.com/yourusername/american-teens/releases)
+1. Download ZIP from [GitHub Releases](https://github.com/Lucas12teixeira/american-teens/releases)
 2. Extract to your desired location
 3. Open terminal in extracted folder
 
@@ -841,9 +841,9 @@ sudo a2enmod expires
 Need help with installation?
 
 - 📚 Check [Documentation](docs/)
-- 💬 [GitHub Discussions](https://github.com/yourusername/american-teens/discussions)
-- 🐛 [Report Issue](https://github.com/yourusername/american-teens/issues)
-- 📧 Email: your.email@example.com
+- 💬 [GitHub Discussions](https://github.com/Lucas12teixeira/american-teens/discussions)
+- 🐛 [Report Issue](https://github.com/Lucas12teixeira/american-teens/issues)
+- 📧 Email: lucas12teixeira@gmail.com
 
 ---
 
@@ -866,6 +866,6 @@ Congratulations! 🎉 American Teens is now installed!
 
 **[⬆ Back to Top](#-installation-guide---american-teens)**
 
-Need help? [Open an issue](https://github.com/yourusername/american-teens/issues)
+Need help? [Open an issue](https://github.com/Lucas12teixeira/american-teens/issues)
 
 </div>

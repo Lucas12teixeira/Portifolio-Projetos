@@ -1,4 +1,4 @@
-# 🔒 Security Policy
+﻿# 🔒 Security Policy
 
 ## 🛡️ Supported Versions
 
@@ -19,7 +19,7 @@ Security vulnerabilities should not be disclosed publicly until they have been a
 
 ### 2. Report Privately
 
-Send details to: **your.email@example.com**
+Send details to: **lucas12teixeira@gmail.com**
 
 Include:
 - Description of the vulnerability
@@ -113,7 +113,7 @@ Interested in conducting a security audit? Contact us!
 ## 📞 Contact
 
 For security concerns:
-- 📧 Email: your.email@example.com
+- 📧 Email: lucas12teixeira@gmail.com
 - 🔐 PGP Key: [Available on request]
 
 ---

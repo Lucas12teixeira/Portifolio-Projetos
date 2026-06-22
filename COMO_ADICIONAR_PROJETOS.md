@@ -1,4 +1,4 @@
-# 📂 Guia: Como Adicionar Novos Projetos ao Portfólio
+﻿# 📂 Guia: Como Adicionar Novos Projetos ao Portfólio
 
 ## 🎯 Objetivo
 
@@ -252,8 +252,8 @@ Copie e cole este template para novos projetos:
 
 Desenvolvido por **Lucas (Erl Dev)**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seuperfil)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
 
 ---
 
@@ -261,9 +261,9 @@ Desenvolvido por **Lucas (Erl Dev)**
 
 Para acesso ao código-fonte ou oportunidades:
 
-- 📧 **Email**: seu.email@example.com
-- 💼 **LinkedIn**: [seuperfil](https://linkedin.com/in/seuperfil)
-- 🌐 **Portfolio**: [erldev.com.br](https://erldev.com.br)
+- 📧 **Email**: lucas12teixeira@gmail.com
+- 💼 **LinkedIn**: [Lucas Lima](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- 🌐 **Portfolio**: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 ---
 
@@ -271,7 +271,7 @@ Para acesso ao código-fonte ou oportunidades:
 
 **[⬆ Voltar ao Topo](#-nome-do-projeto)**
 
-Desenvolvido com ❤️ por [Lucas (Erl Dev)](https://erldev.com.br)
+Desenvolvido com ❤️ por [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 **© 2024-2026. Todos os direitos reservados.**
 

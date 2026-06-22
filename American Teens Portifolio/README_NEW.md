@@ -1,4 +1,4 @@
-# 🌟 American Teens - Digital Community Platform
+﻿# 🌟 American Teens - Digital Community Platform
 
 <div align="center">
 
@@ -9,9 +9,9 @@
 [![License](https://img.shields.io/badge/license-Portfolio_Project-blue.svg)](LICENSE)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange)](https://mysql.com)
-[![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://americateens.erldev.com.br)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 
-[🚀 Live Demo](https://americateens.erldev.com.br) • [📚 Documentation](docs/)
+[🚀 Live Demo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos) • [📚 Documentation](docs/)
 
 ---
 
@@ -113,7 +113,7 @@ American Teens addresses these challenges by providing:
 ### 🌟 Why This Project Stands Out
 
 - ✅ **Zero Framework Dependencies**: Built with vanilla JavaScript for maximum performance
-- ✅ **Production-Ready**: Live and serving real users at [americateens.erldev.com.br](https://americateens.erldev.com.br)
+- ✅ **Production-Ready**: Live and serving real users at [americateens.github.com/Lucas12teixeira/Portifolio-Projetos](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 - ✅ **Complete Feature Set**: Not a demo - fully functional with 12+ integrated modules
 - ✅ **Real-World Impact**: Actively used by youth ministry communities
 - ✅ **Professional Architecture**: Clean code, documented APIs, security best practices
@@ -152,9 +152,9 @@ For inquiries about:
 - 💰 **Licensing**
 
 **Please contact:**
-- 📧 Email: seu.email@example.com
-- 💼 LinkedIn: [seuperfil](https://linkedin.com/in/seuperfil)
-- 🌐 Portfolio: [erldev.com.br](https://erldev.com.br)
+- 📧 Email: lucas12teixeira@gmail.com
+- 💼 LinkedIn: [Lucas Lima](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- 🌐 Portfolio: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 ---
 
@@ -468,10 +468,10 @@ Load Times:
 
 Full-Stack Developer | PWA Enthusiast | Faith-Tech Integration
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seugithub)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seuperfil)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://erldev.com.br)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas12teixeira)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
 
 **"Building technology that brings communities together"**
 
@@ -507,9 +507,9 @@ Full-Stack Developer | PWA Enthusiast | Faith-Tech Integration
 
 ### 📧 Get in Touch
 
-- **Email**: seu.email@example.com
-- **LinkedIn**: [Connect with me](https://linkedin.com/in/seuperfil)
-- **Portfolio**: [erldev.com.br](https://erldev.com.br)
+- **Email**: lucas12teixeira@gmail.com
+- **LinkedIn**: [Connect with me](https://www.linkedin.com/in/lucas-lima-10218529a/)
+- **Portfolio**: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 - **WhatsApp**: Available upon request
 
 ---
@@ -537,7 +537,7 @@ If this project impressed you or you'd like to discuss opportunities:
 
 ---
 
-Made with ❤️ and ☕ by [Lucas (Erl Dev)](https://erldev.com.br)
+Made with ❤️ and ☕ by [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 *Connecting faith and technology, one line of code at a time*
 

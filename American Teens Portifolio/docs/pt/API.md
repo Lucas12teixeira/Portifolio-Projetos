@@ -1,4 +1,4 @@
-# 📡 Documentação da API
+﻿# 📡 Documentação da API
 
 Referência completa para a API REST do American Teens.
 
@@ -24,7 +24,7 @@ Referência completa para a API REST do American Teens.
 
 **Produção:**
 ```
-https://americateens.erldev.com.br/api
+https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api
 ```
 
 **Desenvolvimento:**
@@ -1322,7 +1322,7 @@ Content-Type: application/json
 ```javascript
 // Login
 async function login(email, password) {
-  const response = await fetch('https://americateens.erldev.com.br/api/auth/login', {
+  const response = await fetch('https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api/auth/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -1345,7 +1345,7 @@ async function login(email, password) {
 async function getConversations() {
   const token = localStorage.getItem('token');
   
-  const response = await fetch('https://americateens.erldev.com.br/api/chat/conversations', {
+  const response = await fetch('https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api/chat/conversations', {
     headers: {
       'Authorization': `Bearer ${token}`
     }
@@ -1359,7 +1359,7 @@ async function getConversations() {
 async function sendMessage(receiverId, message) {
   const token = localStorage.getItem('token');
   
-  const response = await fetch('https://americateens.erldev.com.br/api/chat/send', {
+  const response = await fetch('https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api/chat/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -1378,7 +1378,7 @@ async function sendMessage(receiverId, message) {
 <?php
 // Login
 function login($email, $password) {
-    $ch = curl_init('https://americateens.erldev.com.br/api/auth/login');
+    $ch = curl_init('https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api/auth/login');
     
     curl_setopt_array($ch, [
         CURLOPT_POST => true,
@@ -1398,7 +1398,7 @@ function login($email, $password) {
 
 // Buscar eventos com token
 function getEvents($token) {
-    $ch = curl_init('https://americateens.erldev.com.br/api/events');
+    $ch = curl_init('https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos/api/events');
     
     curl_setopt_array($ch, [
         CURLOPT_HTTPHEADER => [

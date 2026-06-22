@@ -1,4 +1,4 @@
-# 🎯 Executive Summary - American Teens Platform
+﻿# 🎯 Executive Summary - American Teens Platform
 
 ## Quick Overview
 
@@ -13,7 +13,7 @@
 - ✅ **PWA Architecture** - Installable, works offline, mobile-optimized
 - ✅ **Real-time Chat** - Fully functional messaging system with 2,000+ lines of code
 - ✅ **Secure Authentication** - JWT-based with refresh tokens and role-based access
-- ✅ **Production Deployed** - Live at https://americateens.erldev.com.br
+- ✅ **Production Deployed** - Live at https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos
 - ✅ **MySQL Database** - Well-structured with 15+ tables and optimized indexes
 - ✅ **RESTful API** - 50+ endpoints with comprehensive documentation
 
@@ -287,7 +287,7 @@ This project demonstrates qualifications for:
 
 ## 📞 Elevator Pitch (30 seconds)
 
-> "I built **American Teens**, a production Progressive Web App serving youth communities. It's a full-stack platform with real-time chat, event management, and spiritual growth tools. Built with vanilla JavaScript (no frameworks), PHP backend, and MySQL database. The project showcases my ability to architect scalable systems, debug complex issues, and deliver production-grade applications. I documented everything extensively, making it easy for teams to onboard and contribute. Check out the live demo at americateens.erldev.com.br"
+> "I built **American Teens**, a production Progressive Web App serving youth communities. It's a full-stack platform with real-time chat, event management, and spiritual growth tools. Built with vanilla JavaScript (no frameworks), PHP backend, and MySQL database. The project showcases my ability to architect scalable systems, debug complex issues, and deliver production-grade applications. I documented everything extensively, making it easy for teams to onboard and contribute. Check out the live demo at americateens.github.com/Lucas12teixeira/Portifolio-Projetos"
 
 ---
 
@@ -323,7 +323,7 @@ To make the GitHub repository even more attractive, consider adding:
 ### Demo
 1. **Video Walkthrough** - 2-3 minute demo
 2. **GIF Animations** - Key features in action
-3. **Live Demo Link** - (already have: americateens.erldev.com.br)
+3. **Live Demo Link** - (already have: americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 
 ---
 
@@ -404,7 +404,7 @@ Production Progressive Web Application for youth ministry communities featuring 
 
 **Skills:** JavaScript • PHP • MySQL • PWA • REST API • Git • Web Development
 
-**Link:** https://github.com/yourusername/american-teens
+**Link:** https://github.com/Lucas12teixeira/american-teens
 
 ---
 

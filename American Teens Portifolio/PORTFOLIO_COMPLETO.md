@@ -1,4 +1,4 @@
-# ✅ Portfolio Criado com Sucesso!
+﻿# ✅ Portfolio Criado com Sucesso!
 
 ## 🎉 Parabéns! Seu portfólio profissional está completo!
 
@@ -157,7 +157,7 @@ Este documento lista tudo que foi criado para tornar seu projeto American Teens 
 # Arquivos que DEVEM ser personalizados:
 1. README.md
    - Substitua "yourusername" pelo seu usuário GitHub
-   - Substitua "your.email@example.com" pelo seu email
+   - Substitua "lucas12teixeira@gmail.com" pelo seu email
    - Adicione suas redes sociais reais
    
 2. CONTRIBUTING.md
@@ -290,7 +290,7 @@ American Teens Portifolio/
    Progressive Web Application (PWA) for youth ministry
    Tech: PHP, MySQL, JavaScript, REST API, Service Workers
    GitHub: github.com/seu-usuario/american-teens
-   Live: americateens.erldev.com.br
+   Live: americateens.github.com/Lucas12teixeira/Portifolio-Projetos
    ```
 
 2. **No LinkedIn**:

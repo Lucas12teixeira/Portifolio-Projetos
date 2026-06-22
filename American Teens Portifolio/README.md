@@ -1,4 +1,4 @@
-# Portifolio-Projetos
+﻿# Portifolio-Projetos
 **Este Portifolio contem a Descrição dos meus projetos***
 
 # 🌟 American Teens - Digital Community Platform
@@ -15,7 +15,7 @@
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange)](https://mysql.com)
 
-[🚀 Live Demo](https://americateens.erldev.com.br) • [📚 Documentation](docs/) • [🐛 Report Bug](https://github.com/yourusername/american-teens/issues) • [✨ Request Feature](https://github.com/yourusername/american-teens/issues)
+[🚀 Live Demo](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos) • [📚 Documentation](docs/) • [🐛 Report Bug](https://github.com/Lucas12teixeira/american-teens/issues) • [✨ Request Feature](https://github.com/Lucas12teixeira/american-teens/issues)
 
 ---
 
@@ -120,7 +120,7 @@ American Teens addresses these challenges by providing:
 ### 🌟 Why This Project Stands Out
 
 - ✅ **Zero Framework Dependencies**: Built with vanilla JavaScript for maximum performance
-- ✅ **Production-Ready**: Live and serving real users at [americateens.erldev.com.br](https://americateens.erldev.com.br)
+- ✅ **Production-Ready**: Live and serving real users at [americateens.github.com/Lucas12teixeira/Portifolio-Projetos](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
 - ✅ **Complete Feature Set**: Not a demo - fully functional with 12+ integrated modules
 - ✅ **Real-World Impact**: Actively used by youth ministry communities
 - ✅ **Professional Architecture**: Clean code, documented APIs, security best practices
@@ -301,7 +301,7 @@ American Teens addresses these challenges by providing:
 
 **Step 1: Clone the repository**
 ```bash
-git clone https://github.com/yourusername/american-teens.git
+git clone https://github.com/Lucas12teixeira/american-teens.git
 cd american-teens
 ```
 
@@ -698,7 +698,7 @@ Load Times:
 - [ ] Volunteer scheduling
 - [ ] Mentorship matching program
 
-> 💡 Have a feature request? [Open an issue](https://github.com/yourusername/american-teens/issues/new?template=feature_request.md)
+> 💡 Have a feature request? [Open an issue](https://github.com/Lucas12teixeira/american-teens/issues/new?template=feature_request.md)
 
 ---
 
@@ -726,14 +726,14 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
 
 ### 🐛 Found a Bug?
 
-1. Check if the bug was already reported in [Issues](https://github.com/yourusername/american-teens/issues)
-2. If not, [open a new issue](https://github.com/yourusername/american-teens/issues/new?template=bug_report.md)
+1. Check if the bug was already reported in [Issues](https://github.com/Lucas12teixeira/american-teens/issues)
+2. If not, [open a new issue](https://github.com/Lucas12teixeira/american-teens/issues/new?template=bug_report.md)
 3. Include detailed steps to reproduce
 4. Add screenshots if applicable
 
 ### 💡 Have an Idea?
 
-[Open a feature request](https://github.com/yourusername/american-teens/issues/new?template=feature_request.md) and let's discuss it!
+[Open a feature request](https://github.com/Lucas12teixeira/american-teens/issues/new?template=feature_request.md) and let's discuss it!
 
 ---
 
@@ -759,10 +759,10 @@ MIT License - Free to use, modify, and distribute
 
 Full-Stack Developer | PWA Enthusiast | Faith-Tech Integration
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://erldev.com.br)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas12teixeira)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
 
 **"Building technology that brings communities together"**
 
@@ -786,14 +786,14 @@ Special thanks to:
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/american-teens?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/american-teens?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/american-teens?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Lucas12teixeira/Portifolio-Projetos?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Lucas12teixeira/Portifolio-Projetos?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Lucas12teixeira/Portifolio-Projetos?style=social)
 
-![GitHub issues](https://img.shields.io/github/issues/yourusername/american-teens)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/american-teens)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/american-teens)
-![GitHub code size](https://img.shields.io/github/languages/code-size/yourusername/american-teens)
+![GitHub issues](https://img.shields.io/github/issues/Lucas12teixeira/Portifolio-Projetos)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Lucas12teixeira/Portifolio-Projetos)
+![GitHub last commit](https://img.shields.io/github/last-commit/Lucas12teixeira/Portifolio-Projetos)
+![GitHub code size](https://img.shields.io/github/languages/code-size/Lucas12teixeira/Portifolio-Projetos)
 
 ### 📈 Activity
 
@@ -807,7 +807,7 @@ Special thanks to:
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/american-teens&type=Date)](https://star-history.com/#yourusername/american-teens&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Lucas12teixeira/Portifolio-Projetos&type=Date)](https://star-history.com/#Lucas12teixeira/Portifolio-Projetos&Date)
 
 </div>
 
@@ -818,10 +818,10 @@ Special thanks to:
 Need help? Here's how to get support:
 
 - 📚 **Documentation**: Check our [docs](docs/) folder
-- 💬 **Discussions**: Join [GitHub Discussions](https://github.com/yourusername/american-teens/discussions)
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/american-teens/issues/new?template=bug_report.md)
-- 💡 **Feature Requests**: [Request a feature](https://github.com/yourusername/american-teens/issues/new?template=feature_request.md)
-- 📧 **Email**: your.email@example.com
+- 💬 **Discussions**: Join [GitHub Discussions](https://github.com/Lucas12teixeira/american-teens/discussions)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/Lucas12teixeira/american-teens/issues/new?template=bug_report.md)
+- 💡 **Feature Requests**: [Request a feature](https://github.com/Lucas12teixeira/american-teens/issues/new?template=feature_request.md)
+- 📧 **Email**: lucas12teixeira@gmail.com
 
 ---
 
@@ -849,7 +849,7 @@ If this project helped you, please consider:
 
 ---
 
-Made with ❤️ and ☕ by [Lucas (Erl Dev)](https://erldev.com.br)
+Made with ❤️ and ☕ by [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 
 *Connecting faith and technology, one line of code at a time*
 

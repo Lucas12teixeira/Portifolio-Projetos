@@ -1,4 +1,4 @@
-# GynConect — Sistema de Gestão Comercial
+﻿# GynConect — Sistema de Gestão Comercial
 
 <div align="center">
 
@@ -330,8 +330,8 @@ GynConect Portfolio/
 **Lucas (Erl Dev)**
 Full-Stack Developer | Especialista em PWA | Soluções Comerciais Web
 
-- 🌐 Portfolio: [erldev.com.br](https://erldev.com.br)
-- 💼 LinkedIn: [linkedin.com/in/seuperfil](https://linkedin.com/in/seuperfil)
+- 🌐 Portfolio: [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+- 💼 LinkedIn: [www.linkedin.com/in/lucas-lima-10218529a/](https://www.linkedin.com/in/lucas-lima-10218529a/)
 - 🐙 GitHub: [@Lucas12teixeira](https://github.com/Lucas12teixeira)
 
 ---
@@ -348,6 +348,6 @@ Full-Stack Developer | Especialista em PWA | Soluções Comerciais Web
 
 [📋 Ver Resumo Executivo](PROJECT_SUMMARY.md) • [🏗 Arquitetura](docs/ARQUITETURA.md) • [🔌 API](docs/API.md) • [🔒 Segurança](SECURITY.md)
 
-**Desenvolvido com ❤️ e ☕ por [Lucas (Erl Dev)](https://erldev.com.br)**
+**Desenvolvido com ❤️ e ☕ por [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)**
 
 </div>

@@ -1,4 +1,4 @@
-# 🏗️ System Architecture
+﻿# 🏗️ System Architecture
 
 ## Table of Contents
 - [Overview](#overview)
@@ -756,7 +756,7 @@ function escapeHtml(text) {
 
 ```php
 // Restrict allowed origins in production
-$allowed_origins = ['https://americateens.erldev.com.br'];
+$allowed_origins = ['https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos'];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 
 if (in_array($origin, $allowed_origins)) {

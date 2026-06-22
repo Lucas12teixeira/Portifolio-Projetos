@@ -1,4 +1,4 @@
-# 🎯 COMECE AQUI!
+﻿# 🎯 COMECE AQUI!
 
 ## 🎉 Seu Portfólio Profissional Está Pronto!
 
@@ -14,7 +14,7 @@ Parabéns! Você tem um portfólio completo do projeto American Teens, pronto pa
 ### 2. Personalize os Arquivos
 ⚠️ **IMPORTANTE**: Substitua estas informações:
 - `yourusername` → Seu usuário do GitHub
-- `your.email@example.com` → Seu email real
+- `lucas12teixeira@gmail.com` → Seu email real
 - Links de redes sociais → Seus perfis reais
 
 **Arquivos para editar:**

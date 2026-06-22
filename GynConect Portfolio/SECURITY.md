@@ -1,4 +1,4 @@
-# Política de Segurança — GynConect
+﻿# Política de Segurança — GynConect
 
 ## Visão Geral
 
@@ -72,7 +72,7 @@ GynConect implementa **Role-Based Access Control** com quatro níveis:
 Este é um repositório de portfólio — o código-fonte não está disponível publicamente.
 
 Para contato sobre segurança ou o projeto:
-- 🌐 [erldev.com.br](https://erldev.com.br)
+- 🌐 [github.com/Lucas12teixeira/Portifolio-Projetos](https://github.com/Lucas12teixeira/Portifolio-Projetos)
 - 🐙 GitHub: [@Lucas12teixeira](https://github.com/Lucas12teixeira)
 
 ---
