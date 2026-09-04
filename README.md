@@ -52,17 +52,62 @@ Bem-vindo ao meu portfólio de projetos! Este repositório contém documentaçã
 [![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](GynConect%20Portfolio/)
 
 **Stack**: PHP, MySQL, JavaScript Vanilla, PWA, REST API  
+**Status**: ✅ Produção — linha de versão 5.x  
+
+**Destaques**:
+- 📦 Consignação com visitas unificadas (acerto + reposição) e trilha de auditoria
+- 🛒 Vendas com assinatura digital e criação **offline** (IndexedDB + fila de sincronização)
+- 👆 Login biométrico (WebAuthn — Face ID / Touch ID / digital)
+- 💳 Cobrança recorrente com gateways Asaas e Mercado Pago (Pix, boleto), webhooks e cron de inadimplência
+- 🔔 Notificações Web Push nativas (VAPID / RFC 8291)
+- 📋 Atendimento com mapa Leaflet e geolocalização
+- 🔗 Integração servidor-a-servidor com o ERP interno (ErlDev Gestão)
+- 🔐 RBAC com 4 níveis + permissões finas
+- 📊 Financeiro com DRE simplificado e exportação nativa de PDF e Excel
+
+[📖 Ver Documentação Completa →](GynConect%20Portfolio/README.md)
+
+---
+
+### 3. ⛪ Louvor ADE - Sistema de Escalas do Ministério de Louvor
+
+**PWA de gestão de escalas para o Ministério de Louvor da AD Expansul**
+
+[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](Louvor%20ADE%20Portfolio/)
+
+**Stack**: PHP, MySQL, JavaScript Vanilla, PWA  
 **Status**: ✅ Produção  
 
 **Destaques**:
-- 📦 Controle de consignação com trilha de auditoria
-- 🛒 Vendas com assinatura digital do cliente
-- 📊 Dashboard com KPIs financeiros em tempo real
-- 🔐 RBAC com 4 níveis de acesso
-- 📱 PWA com suporte offline para uso em campo
-- 📄 Exportação nativa de PDF e Excel
+- 📅 Escala da semana atual e da próxima, montagem assistida por culto
+- ⚖️ Validação automática de regras de acúmulo de função (configuráveis em banco, não no código)
+- 👆 Login por biometria (WebAuthn) + sessão PHP + proteção CSRF
+- ✅ Confirmação de presença e aviso de indisponibilidade pelos membros
+- 🔔 Web Push quando o membro é escalado
+- 🛠 Painel Dev com permissões finas, feature flags e conformidade com a LGPD
 
-[📖 Ver Documentação Completa →](GynConect%20Portfolio/README.md)
+[📖 Ver Documentação Completa →](Louvor%20ADE%20Portfolio/README.md)
+
+---
+
+### 4. 🗂 ErlDev Gestão - ERP Interno de Clientes, Sistemas e Pagamentos
+
+**Sistema interno para gestão de clientes, sites/sistemas entregues e controle de pagamentos**
+
+[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](ErlDev%20Gestao%20Portfolio/)
+
+**Stack**: PHP 8 (MVC), MySQL, JavaScript Vanilla, PWA  
+**Status**: ✅ Produção  
+
+**Destaques**:
+- 🔗 Sincronização servidor-a-servidor com os sistemas dos clientes (puxa assinatura e faturas do GynConect, controla remotamente)
+- 💳 Cobrança Pix via Mercado Pago (sem SDK)
+- ⏸ Suspensão automática por inadimplência com notificação Web Push em tempo real
+- 📡 Monitoramento de uptime dos sistemas e da saúde do servidor de hospedagem
+- 👆 Login biométrico (WebAuthn)
+- 🏗 MVC em PHP 8 puro em hospedagem compartilhada — sem Composer/Node no servidor
+
+[📖 Ver Documentação Completa →](ErlDev%20Gestao%20Portfolio/README.md)
 
 ---
 
@@ -80,20 +125,22 @@ Bem-vindo ao meu portfólio de projetos! Este repositório contém documentaçã
 
 ### Backend
 ```
-✓ PHP (OOP, 7.4+)
-✓ API RESTful
-✓ MySQL & Database Design
-✓ JWT Authentication
-✓ Security Best Practices
-✓ Server Configuration
+✓ PHP (OOP, 7.4+ / 8.x), MVC
+✓ API RESTful & integrações servidor-a-servidor
+✓ MySQL & Database Design + migrações versionadas
+✓ Autenticação por token, WebAuthn (biometria)
+✓ Gateways de pagamento (Pix/boleto) e webhooks
+✓ Web Push nativo (VAPID / RFC 8291)
+✓ Security Best Practices (PDO, RBAC, CSRF)
 ```
 
 ### DevOps & Tools
 ```
 ✓ Git & Version Control
-✓ Apache/Nginx
-✓ Linux Server Management
+✓ Apache/Nginx & hospedagem compartilhada
+✓ GitHub Actions (cron agendado)
 ✓ HTTPS/SSL Configuration
+✓ Monitoramento de uptime e saúde de servidor
 ✓ Performance Optimization
 ✓ Technical Documentation
 ```
@@ -106,10 +153,10 @@ Bem-vindo ao meu portfólio de projetos! Este repositório contém documentaçã
 
 | Métrica | Valor |
 |---------|-------|
-| 📁 **Projetos Completados** | 2 |
-| 💻 **Linhas de Código** | 30.000+ |
-| ⏱️ **Horas de Desenvolvimento** | 1.000+ |
-| 🚀 **Projetos em Produção** | 2 |
+| 📁 **Projetos Documentados** | 4 |
+| 💻 **Linhas de Código** | 60.000+ |
+| ⏱️ **Horas de Desenvolvimento** | 2.000+ |
+| 🚀 **Projetos em Produção** | 4 |
 | ⭐ **Pontuação Média Lighthouse** | 92/100 |
 
 </div>
@@ -180,19 +227,23 @@ A documentação neste repositório está disponível sob licença Creative Comm
 
 ### Por Tecnologia
 
-- **PHP Projects**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
-- **JavaScript Vanilla**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
-- **PWA Projects**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **PHP**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **JavaScript Vanilla**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **PWA**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **WebAuthn / Biometria**: [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **Pagamentos / Pix**: [GynConect](GynConect%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
 
 ### Por Tipo
 
-- **Full-Stack**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **Full-Stack**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
 - **Comunidade / Social**: [American Teens](American%20Teens%20Portifolio/)
 - **Gestão Comercial**: [GynConect](GynConect%20Portfolio/)
+- **Gestão Interna / ERP**: [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **Escalas / Ministério**: [Louvor ADE](Louvor%20ADE%20Portfolio/)
 
 ### Por Status
 
-- **Produção**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/)
+- **Produção**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
 
 ---
 
@@ -200,8 +251,7 @@ A documentação neste repositório está disponível sob licença Creative Comm
 
 Este portfólio está em constante evolução. Novos projetos e atualizações são adicionados regularmente.
 
-**Última atualização**: Fevereiro 2026  
-**Próxima atualização planejada**: Março 2026
+**Última atualização**: Setembro 2026 — GynConect atualizado (linha 5.x) e adição dos projetos Louvor ADE e ErlDev Gestão
 
 ---
 

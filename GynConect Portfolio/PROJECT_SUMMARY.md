@@ -2,10 +2,10 @@
 
 ## Visão em Uma Página
 
-**Nome do Projeto**: GynConect — Sistema de Gestão Comercial  
-**Tipo**: Sistema Web + Progressive Web App (PWA)  
-**Propósito**: Gestão comercial para distribuidores com equipe de vendas externa e modelo de consignação  
-**Status**: Produção
+**Nome do Projeto**: GynConect — Sistema de Gestão Comercial
+**Tipo**: Sistema Web + Progressive Web App (PWA)
+**Propósito**: Gestão comercial para distribuidores com equipe de vendas externa e modelo de consignação
+**Status**: Produção — linha de versão 5.x
 
 ---
 
@@ -14,11 +14,13 @@
 | Aspecto | Detalhes |
 |---------|---------|
 | **Stack** | PHP, MySQL, JavaScript Vanilla, CSS3 |
-| **Arquitetura** | REST API + SPA (Single Page Application) |
-| **Segurança** | Token-based auth, PDO, RBAC com 4 níveis |
-| **Módulos** | 15+ módulos integrados |
+| **Arquitetura** | REST API + SPA + integrações servidor-a-servidor |
+| **Segurança** | Token auth, WebAuthn, PDO, RBAC com 4 níveis + permissões finas |
+| **Módulos** | 20+ módulos integrados |
+| **Pagamentos** | Asaas + Mercado Pago (Pix, boleto, cartão) com webhooks |
+| **Offline** | IndexedDB (cache + outbox) com Sync Manager FIFO |
 | **Exportações** | PDF e Excel nativos em PHP |
-| **Mobile** | PWA com suporte offline via Service Worker |
+| **Mobile** | PWA com auto-update e suporte offline via Service Worker |
 
 ---
 
@@ -30,23 +32,28 @@
 - Ausência de visibilidade gerencial em tempo real
 - Cálculo de comissões sujeito a erros
 - Sem assinatura digital nos termos de consignação
+- Priorização subjetiva de quais clientes visitar
+- Cobrança da mensalidade do próprio sistema feita manualmente
 
-**Solução**: Uma plataforma web completa que centraliza toda a operação, acessível em campo via PWA com suporte offline.
+**Solução**: Uma plataforma web completa que centraliza toda a operação, acessível em campo via PWA com suporte offline real, login por biometria, cobrança recorrente automatizada e integração com o ERP interno.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-1. **🔐 Controle de Acesso** — 4 níveis de permissão (Vendedor, Gerente, Financeiro, Dev)
+1. **🔐 Controle de Acesso** — 4 níveis + permissões finas + login biométrico (WebAuthn)
 2. **📊 Dashboard** — KPIs em tempo real com exportação em PDF
-3. **👥 Gestão de Clientes** — Cadastro, histórico, inatividade, WhatsApp
-4. **🛒 Vendas** — Pedidos com assinatura digital e duas formas de pagamento
-5. **📦 Consignação** — Controle com trilha de auditoria e termos assinados digitalmente
-6. **🗃 Estoque** — Central + por vendedor + consignação, com alertas de mínimo
-7. **💰 Comissões** — Cálculo automático por venda, pago pelo gerente
-8. **🏦 Financeiro** — Controle de boletos com KPIs de vencimento
-9. **🔄 Devoluções** — Quarentena e resolução com impacto automático no estoque
-10. **📄 Relatórios** — PDF e Excel para vendas, romaneios e termos
+3. **📋 Atendimento** — priorização de clientes sem visita, com mapa Leaflet e geolocalização
+4. **👥 Gestão de Clientes** — cadastro, histórico de vendas em PDF, inatividade, WhatsApp
+5. **🛒 Vendas** — pedidos com assinatura digital, duas formas de pagamento e criação offline
+6. **📦 Consignação** — visitas unificadas (acerto + reposição), trilha de auditoria, termos assinados
+7. **💰 Comissões e Lucro Padrão** — cálculo automático por venda, margem por produto
+8. **🏦 Financeiro** — DRE simplificado, 6 KPIs, boleto parcelado
+9. **💳 Cobrança / Assinatura** — faturas recorrentes com Asaas e Mercado Pago, webhooks e cron de inadimplência
+10. **🔔 Web Push** — notificações nativas de cobrança (VAPID / RFC 8291)
+11. **🔄 Devoluções** — quarentena e resolução com impacto automático no estoque
+12. **🔗 Integração ErlDev Gestão** — API servidor-a-servidor para sync e controle remoto da assinatura
+13. **📄 Relatórios** — PDF e Excel para vendas, romaneios, termos e histórico por cliente
 
 ---
 
@@ -54,30 +61,39 @@
 
 ### Frontend
 - **JavaScript Vanilla** — SPA sem frameworks, máxima performance e controle
-- **PWA com Service Worker** — uso offline em campo, essencial para vendedores externos
+- **PWA com Service Worker** — auto-update e uso offline em campo
+- **Offline real** — IndexedDB com cache de GET e outbox de escrita; Sync Manager FIFO remapeia IDs temporários
+- **WebAuthn** — cerimônias de registro e login biométrico por dispositivo
+- **Leaflet** — mapa de atendimento com geolocalização, sem CDN
 - **Padrão IIFE/Module Revealing** — organização modular sem bundler
-- **Dark theme responsivo** — interface otimizada para uso mobile no campo
 
 ### Backend
 - **PHP + PDO** — queries parametrizadas em toda a API, sem SQL injection
-- **REST API modular** — endpoints organizados por domínio de negócio
-- **Autenticação stateless** — token de sessão com longa duração
+- **REST API modular** — ~30 domínios de endpoints organizados por negócio
+- **Cobrança com gateways** — interface + roteador para Asaas e Mercado Pago; webhooks idempotentes com log e reconciliação
+- **Web Push nativo** — VAPID / RFC 8291 sem SDK
+- **Integração servidor-a-servidor** — endpoints token Bearer para o ERP interno
 - **Exportações nativas** — PDF e Excel gerados em PHP, sem bibliotecas externas
+- **Automação** — cron diário de inadimplência em GitHub Actions
 
 ### Segurança
-- ✅ RBAC com 4 níveis — sem permissões cruzadas
+- ✅ RBAC com 4 níveis + permissões finas por chave — sem permissões cruzadas
+- ✅ WebAuthn com contador anti-clonagem — chave privada nunca sai do dispositivo
 - ✅ Queries parametrizadas — PDO em 100% dos endpoints
+- ✅ Webhooks com validação, log e idempotência
 - ✅ Sessões controladas administrativamente
-- ✅ Exportações protegidas por token
+- ✅ Exportações e integrações protegidas por token
 
 ---
 
 ## 📈 Impacto e Resultados
 
 - **Operação centralizada**: eliminou controles paralelos em planilhas
-- **Visibilidade em tempo real**: gerente acompanha equipe e KPIs sem deslocamento
-- **Redução de erros**: comissões e estoques calculados automaticamente
-- **Campo conectado**: vendedores acessam e registram dados offline
+- **Visibilidade em tempo real**: gerente acompanha equipe, KPIs e DRE sem deslocamento
+- **Redução de erros**: comissões, estoques e faturas calculados automaticamente
+- **Campo conectado**: vendedores acessam e registram dados offline, entram por biometria
+- **Cobrança autônoma**: mensalidade do sistema gerada, cobrada e conciliada sem intervenção manual
+- **ERP integrado**: o ErlDev Gestão reflete a situação financeira do cliente automaticamente
 
 ---
 
@@ -86,14 +102,19 @@
 ### Técnico
 - Desenvolvimento full-stack de ponta a ponta
 - Design e implementação de API RESTful para contexto comercial
-- PWA com estratégias de cache offline para uso em campo
+- PWA com estratégia de offline real (cache + outbox + sincronização)
+- Integração com gateways de pagamento (Pix/boleto) e tratamento de webhooks idempotentes
+- Implementação de WebAuthn (cerimônias de registro/login, contador anti-clonagem)
+- Web Push nativo (VAPID, payload criptografado) sem SDK
 - Design de banco de dados normalizado para modelo de negócio complexo
 - Geração nativa de documentos (PDF/Excel) em PHP
 
 ### Arquitetura
-- RBAC granular com módulos visíveis por nível de acesso
+- RBAC granular com módulos visíveis por nível de acesso e permissões finas
+- Interface + roteador de gateway para trocar provedor de pagamento sem reescrever o módulo
 - Trilha de auditoria em operações críticas (consignação, estoque)
-- Controle de versão da aplicação com invalidação automática de cache
+- Integração servidor-a-servidor entre dois sistemas próprios
+- Automação sem servidor dedicado (GitHub Actions como agendador)
 
 ---
 
@@ -104,15 +125,13 @@
 - Carregamento mais rápido — crítico para conexões de campo
 - Controle total sobre o comportamento da aplicação
 
-**Por que PWA e não app nativo?**
-- Distribuição imediata — sem app store
-- Cross-platform — Android e iOS com o mesmo código
-- Atualização automática — sem processo de review
+**Por que offline real com outbox?**
+- Vendedor no campo não pode perder uma venda por falta de sinal
+- A fila FIFO com remapeamento de IDs mantém a integridade referencial na sincronização
 
-**Por que PHP com exportações nativas?**
-- Hospedagem compartilhada comum — compatibilidade total
-- PDF e Excel sem biblioteca externa = sem dependência de terceiros
-- Performance previsível em servidor simples
+**Por que gateways atrás de uma interface comum?**
+- Asaas e Mercado Pago são intercambiáveis; adicionar um terceiro não toca o módulo de cobrança
+- Webhooks idempotentes + reconciliação garantem consistência mesmo com falha de rede
 
 ---
 
@@ -120,9 +139,11 @@
 
 | Métrica | Estimativa |
 |---------|-----------|
-| **Módulos** | 15+ módulos integrados |
-| **Níveis de Acesso** | 4 (Vendedor, Gerente, Financeiro, Dev) |
-| **Tipos de Exportação** | PDF, Excel, Romaneio, Termo de Consignação |
+| **Módulos** | 20+ módulos integrados |
+| **Domínios de API** | ~30 |
+| **Níveis de Acesso** | 4 + flag de cobrança + permissões finas |
+| **Migrações de Banco** | v1.x → v5.6 |
+| **Gateways de Pagamento** | Asaas, Mercado Pago |
 | **Tipos de Estoque** | Central, por Vendedor, Consignação |
 | **Status de Venda** | Pendente → Confirmada → Entregue |
 | **Status de Devolução** | Registrada → Aprovada → Quarentena → Resolvida |
@@ -131,19 +152,22 @@
 
 ## 🎬 Pitch em 30 Segundos
 
-> "Desenvolvi o GynConect, um sistema web de gestão comercial completo para distribuidores com equipes de vendas externas. A plataforma controla clientes, estoque, vendas, consignação, comissões e financeiro — tudo em uma SPA construída com PHP e JavaScript Vanilla, funcionando como PWA com suporte offline em campo. O sistema tem 4 níveis de acesso, assinatura digital nos pedidos e termos de consignação, exportação nativa de PDF e Excel, e está em produção atendendo uma operação real."
+> "Desenvolvi o GynConect, um sistema web de gestão comercial completo para distribuidores com equipes de vendas externas. A plataforma controla clientes, estoque, vendas, consignação, comissões e financeiro — tudo em uma SPA com PHP e JavaScript Vanilla, funcionando como PWA com offline real (IndexedDB + fila de sincronização) e login por biometria. O sistema cobra a própria mensalidade via Pix e boleto (Asaas e Mercado Pago) com webhooks e cron de inadimplência, envia notificações Web Push, tem um mapa de atendimento com geolocalização e se integra por API ao meu ERP interno. Está em produção, na linha de versão 5.x, atendendo uma operação real."
 
 ---
 
 ## 📊 Stats Rápidas
 
 ```
-⚙️  Arquitetura:  REST API + SPA
-📱  Mobile:       PWA + Service Worker (offline)
-🔐  Segurança:   RBAC 4 níveis + PDO + tokens
-📦  Módulos:     15+ integrados
+⚙️  Arquitetura:  REST API + SPA + integrações S2S
+📱  Mobile:       PWA + Service Worker + offline real (IndexedDB)
+🔐  Segurança:   RBAC 4 níveis + permissões finas + WebAuthn + PDO
+💳  Pagamentos:  Asaas + Mercado Pago (Pix, boleto, cartão) + webhooks
+🔔  Push:        Web Push nativo (VAPID / RFC 8291)
+📦  Módulos:     20+ integrados
 📄  Exportações: PDF + Excel (PHP nativo)
-🚀  Status:      Produção
+🤖  Automação:   Cron diário via GitHub Actions
+🚀  Status:      Produção — v5.x
 ```
 
 ---

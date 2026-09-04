@@ -323,6 +323,231 @@ Retorna KPIs financeiros do período.
 
 ---
 
+## Autenticação Biométrica (WebAuthn)
+
+Login por Face ID / Touch ID / digital, seguindo o padrão WebAuthn. As trocas usam
+`base64url` para os campos binários.
+
+### POST `/api/auth/webauthn/registro-inicio`
+
+Inicia a cerimônia de registro de uma credencial no dispositivo atual.
+Requer sessão autenticada por senha.
+
+**Response 200**
+```json
+{
+  "success": true,
+  "publicKey": {
+    "challenge": "<base64url>",
+    "rp": { "name": "GYN CONECT", "id": "..." },
+    "user": { "id": "<base64url>", "name": "...", "displayName": "..." },
+    "pubKeyCredParams": [{ "type": "public-key", "alg": -7 }],
+    "authenticatorSelection": { "userVerification": "required", "residentKey": "discouraged" }
+  }
+}
+```
+
+### POST `/api/auth/webauthn/registro-fim`
+
+Conclui o registro, enviando o attestation retornado pelo autenticador.
+
+**Request**
+```json
+{
+  "id": "<credential_id base64url>",
+  "rawId": "<base64url>",
+  "response": { "clientDataJSON": "<base64url>", "attestationObject": "<base64url>" },
+  "apelido": "iPhone do Lucas"
+}
+```
+
+### POST `/api/auth/webauthn/login-inicio`
+
+**Request**
+```json
+{ "email": "usuario@exemplo.com" }
+```
+
+**Response 200**
+```json
+{
+  "success": true,
+  "publicKey": {
+    "challenge": "<base64url>",
+    "allowCredentials": [{ "type": "public-key", "id": "<base64url>" }],
+    "userVerification": "required"
+  }
+}
+```
+
+### POST `/api/auth/webauthn/login-fim`
+
+Envia o assertion assinado. Em sucesso retorna o mesmo payload de `/api/auth/login`
+(token + usuário). O `sign_counter` é validado contra clonagem.
+
+---
+
+## Atendimento
+
+### GET `/api/atendimento`
+
+Lista clientes sem visita há N dias, para priorização de follow-up.
+Vendedor vê apenas os próprios clientes; gerente/dev veem os clientes de gerentes.
+
+**Query Params**
+
+| Param | Tipo | Descrição |
+|-------|------|-----------|
+| `page` | int | Página (infinite scroll) |
+| `per_page` | int | Itens por página (máx. 500 — usado pelo modo mapa) |
+| `dias_min` | int | Mínimo de dias sem visita (padrão 30) |
+| `search` | string | Nome ou cidade |
+
+**Response 200**
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "id": 42,
+      "nome": "Cliente Exemplo",
+      "cidade": "Goiânia",
+      "ultima_visita": "2026-04-01",
+      "dias_sem_visita": 61,
+      "bucket": "critico",
+      "lat": -16.68, "lng": -49.25
+    }
+  ],
+  "pagination": { "page": 1, "pages": 4, "total": 96 }
+}
+```
+
+---
+
+## Cobrança (Assinatura do Sistema)
+
+Acesso restrito ao `dev` e ao usuário com `responsavel_cobranca = 1`.
+
+### GET `/api/cobranca?acao=status`
+
+Retorna a assinatura e as últimas faturas. Antes de responder, reconcilia
+faturas pendentes com o gateway (cobre o caso do webhook não ter chegado).
+
+**Response 200**
+```json
+{
+  "success": true,
+  "data": {
+    "assinatura": {
+      "status": "ativo",
+      "valor_mensalidade": 149.90,
+      "dia_vencimento": 10,
+      "data_proximo_vencimento": "2026-08-10",
+      "tolerancia_dias": 5
+    },
+    "faturas": [
+      {
+        "id": 31, "valor": 149.90, "data_vencimento": "2026-07-10",
+        "status": "pago", "gateway": "mercadopago",
+        "pago_em": "2026-07-09T14:22:00", "pago_valor": 149.90
+      }
+    ]
+  }
+}
+```
+
+### GET `/api/cobranca?acao=faturas&status=pendente`
+
+Lista as faturas da assinatura, com filtro opcional por status.
+
+### POST `/api/cobranca?acao=gerar_cobranca`
+
+Gera a cobrança da próxima fatura no gateway configurado e retorna Pix + boleto.
+
+**Response 200**
+```json
+{
+  "success": true,
+  "data": {
+    "fatura_id": 32,
+    "gateway": "asaas",
+    "pix_copia_cola": "00020126...",
+    "qr_code_base64": "data:image/png;base64,...",
+    "url_boleto": "https://..."
+  }
+}
+```
+
+### POST `/api/cobranca/webhook_asaas.php` · `/api/cobranca/webhook_mercadopago.php`
+
+Recebem os eventos de pagamento do gateway. Registram em `webhook_logs`
+(idempotente por `gateway + id_externo + evento`) e marcam a fatura como paga.
+
+### GET `/api/cobranca/cron_inadimplencia.php?token=<CRON_TOKEN>`
+
+Disparado diariamente pelo GitHub Actions. Varre faturas vencidas, aplica a
+tolerância, dispara notificações (e-mail + Web Push) e suspende a assinatura
+quando estoura o prazo.
+
+---
+
+## Notificações Web Push
+
+### POST `/api/cobranca?acao=push_subscribe`
+
+Registra a assinatura de push do dispositivo (saída do `PushManager.subscribe`).
+
+**Request**
+```json
+{
+  "endpoint": "https://fcm.googleapis.com/fcm/send/...",
+  "keys": { "p256dh": "<base64url>", "auth": "<base64url>" }
+}
+```
+
+---
+
+## Integração — ErlDev Gestão (Servidor-a-Servidor)
+
+Autenticação por token dedicado: `Authorization: Bearer <ERLDEV_GESTAO_SYNC_TOKEN>`
+ou `?token=`. Não usa sessão/cookie.
+
+### GET `/api/integracoes/erldev_gestao.php`
+
+Somente-leitura. Expõe o estado atual da assinatura e das faturas para o ERP
+interno sincronizar o cliente automaticamente.
+
+**Response 200**
+```json
+{
+  "success": true,
+  "assinatura": { "status": "ativo", "valor_mensalidade": 149.90, "data_proximo_vencimento": "2026-08-10" },
+  "faturas": [
+    { "id": 31, "valor": 149.90, "data_vencimento": "2026-07-10", "status": "pago", "gateway": "mercadopago" }
+  ]
+}
+```
+
+### POST `/api/integracoes/erldev_gestao_controle.php`
+
+Aceita um conjunto fechado de ações de controle remoto da assinatura.
+
+**Request**
+```json
+{ "acao": "suspender" }
+```
+
+| Ação | Efeito |
+|------|--------|
+| `suspender` | Marca a assinatura como suspensa (bloqueia usuários comuns) |
+| `reativar` | Volta a assinatura para ativa |
+| `marcar_pago` | Marca uma fatura como paga manualmente |
+| `config` | Atualiza valor / dia de vencimento / tolerância |
+| `cancelar_fatura` | Cancela uma fatura em aberto |
+| `deletar_fatura` | Remove uma fatura |
+
+---
+
 ## Códigos de Resposta
 
 | Código | Significado |
