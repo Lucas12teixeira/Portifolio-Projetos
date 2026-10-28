@@ -10,7 +10,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![PWA](https://img.shields.io/badge/PWA-Ready-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Status](https://img.shields.io/badge/Status-Produção_v5.x-success?style=for-the-badge)](.)
+[![Status](https://img.shields.io/badge/Status-Produção_v5.7.12-success?style=for-the-badge)](.)
 
 [📋 Funcionalidades](#-funcionalidades) • [🛠 Stack](#-stack-técnico) • [🏗 Arquitetura](#-arquitetura) • [🔒 Segurança](#-segurança) • [📊 Resumo](#-resumo-do-projeto)
 
@@ -41,7 +41,7 @@
 
 **GynConect** é um sistema web de gestão comercial desenvolvido sob medida para equipes de vendas externas que operam com modelo de **consignação**. A plataforma centraliza o controle de clientes, produtos, estoque, vendas, comissões e finanças — tudo acessível em campo via PWA com suporte offline real (IndexedDB + fila de sincronização).
 
-O sistema está em **produção ativa** e evoluiu de forma contínua ao longo da linha de versão **5.x**: hoje inclui login por biometria, cobrança recorrente com gateways de pagamento (Pix/boleto), notificações Web Push, mapa de atendimento com geolocalização e integração servidor-a-servidor com o ERP interno (ErlDev Gestão).
+O sistema está em **produção ativa** e evoluiu de forma contínua ao longo da linha de versão **5.x**: hoje (v5.7.12) inclui login por biometria, sincronização offline resiliente com idempotência, cobrança recorrente com gateways de pagamento (Pix/boleto), notificações Web Push, mapa de atendimento com geolocalização e integração servidor-a-servidor com o ERP interno (ErlDev Gestão).
 
 ### O Problema
 
@@ -56,6 +56,17 @@ Distribuidores com equipes de campo enfrentam desafios críticos:
 ### A Solução
 
 GynConect integra todos esses controles em uma única plataforma web, combinando **mobilidade de campo** (PWA, offline, biometria) com **visibilidade gerencial** (dashboards, DRE, relatórios, exportações) e **operação autônoma** (cobrança automática, webhooks, cron agendado).
+
+---
+
+## ⭐ Destaques de Engenharia
+
+- **Vendas offline-first** — IndexedDB (cache de GET + outbox) com Sync Manager FIFO, retry automático, tela de pendências e chaves de idempotência para que reenvios nunca dupliquem vendas, visitas ou clientes
+- **Login biométrico (WebAuthn)** — Face ID, Touch ID, digital Android e Windows Hello, com credencial por dispositivo e contador anti-clonagem
+- **Web Push nativo** — VAPID / RFC 8291 implementado sem SDK
+- **Cobrança recorrente com gateways** — Asaas e Mercado Pago atrás de interface + roteador, webhooks idempotentes e reconciliação automática
+- **Integração servidor-a-servidor** — o ERP interno (ErlDev Gestão) sincroniza e controla a assinatura via API com token Bearer
+- **PDF e Excel nativos em PHP**, sem bibliotecas externas — incluindo o PDF de pedido com visualizador próprio
 
 ---
 
@@ -95,6 +106,7 @@ GynConect integra todos esses controles em uma única plataforma web, combinando
 - **Visão em mapa (Leaflet)** com geolocalização do vendedor e marcadores dos clientes
 - Buckets de criticidade por cor (ok, alerta, crítico, nunca visitado)
 - Vendedor vê apenas os próprios clientes; gerente e dev veem os clientes de gerentes
+- **Marcar visita** — registra visita sem venda e atualiza a data da última visita
 
 ---
 
@@ -122,10 +134,14 @@ GynConect integra todos esses controles em uma única plataforma web, combinando
 - Diferenciação entre venda comum e venda consignada
 - **Assinatura digital** do cliente no pedido (dispensada para Consumidor Final)
 - Rascunho automático com retenção de 24 horas
+- **Venda não bloqueada por estoque** — o saldo pode ficar negativo até um ajuste de estoque
+- Assinatura obrigatória em pagamento a prazo (boleto, pendente, prazo), inclusive para Consumidor Final
+- Visualizador de **PDF do pedido** (Fechar/Compartilhar) com coluna de lucro do cliente e itens de consignação
 - Fluxo de status: Pendente → Confirmada → Entregue
 - Filtros por data, status, vendedor, forma de pagamento e cliente
 - Exportação em PDF e Excel com todos os filtros aplicados
 - Criação e edição funcionam **offline** — a venda entra na fila e sincroniza ao voltar a conexão
+- **Idempotência** (`Idempotency-Key`): reenvios offline não duplicam a venda; itens pendentes ficam visíveis no ícone de sincronização, com retry automático a cada 2 min e opção de tentar novamente ou descartar
 
 ---
 
@@ -151,6 +167,7 @@ GynConect integra todos esses controles em uma única plataforma web, combinando
 - Alertas visuais de estoque mínimo
 - Categorias de produtos
 - Histórico de movimentações
+- Movimentação com **vários produtos** em uma única operação transacional
 - Valor total do estoque calculado automaticamente
 
 ---
@@ -323,7 +340,7 @@ GynConect
 │
 ├── Banco de Dados
 │   ├── MySQL (schema normalizado)
-│   └── Controle de versão via migrações (v1.x → v5.6)
+│   └── Controle de versão via migrações (v1.x → v5.7)
 │
 └── Automação
     └── GitHub Actions — cron diário de inadimplência
@@ -387,7 +404,7 @@ GynConect
 ## 🎨 Destaques Técnicos
 
 - **SPA sem framework** — zero dependência de bibliotecas JS de terceiros no core
-- **Offline real** — IndexedDB com cache de GET e outbox de escrita; Sync Manager em FIFO com remapeamento de IDs temporários negativos
+- **Offline real** — IndexedDB com cache de GET e outbox de escrita; Sync Manager em FIFO com remapeamento de IDs temporários negativos, retry automático, tela de pendências e chaves de idempotência
 - **Login biométrico** — cerimônias WebAuthn de registro e login, credenciais por dispositivo
 - **Cobrança recorrente com gateways** — interface + roteador para Asaas e Mercado Pago, webhooks idempotentes e reconciliação
 - **Web Push nativo** — VAPID / RFC 8291 sem SDK

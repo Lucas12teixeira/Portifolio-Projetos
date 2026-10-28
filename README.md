@@ -1,276 +1,131 @@
-﻿# 💼 Portfólio de Projetos - Lucas (Erl Dev)
+﻿# Lucas Lima (Erl Dev) — Full-Stack Developer · Applied AI · PWAs
 
 <div align="center">
 
-**Desenvolvedor Full-Stack | Especialista em PWA | Soluções Web Modernas**
+**I design, build and run production web systems end to end: offline-first PWAs, payment and billing flows, biometric auth and LLM agents with tool use.**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas12teixeira)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
-
-</div>
-
----
-
-## 🎯 Sobre Este Repositório
-
-Bem-vindo ao meu portfólio de projetos! Este repositório contém documentação detalhada e apresentações dos projetos que desenvolvi, demonstrando minhas habilidades e experiência em desenvolvimento web full-stack.
-
-> ⚠️ **Nota**: Este repositório contém apenas **documentação e descrições** dos projetos. O código-fonte não está incluído para proteger propriedade intelectual e segurança.
-
----
-
-## 📂 Projetos
-
-### 1. 🌟 American Teens - Plataforma Digital de Comunidade
-
-**Progressive Web Application para gestão de comunidades jovens**
-
-[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](American%20Teens%20Portifolio/)
-[![Demo](https://img.shields.io/badge/Demo_Ao_Vivo-success?style=for-the-badge)](https://americateens.github.com/Lucas12teixeira/Portifolio-Projetos)
-
-**Stack**: PHP, MySQL, JavaScript Vanilla, PWA, REST API  
-**Status**: ✅ Produção  
-**Duração**: 4+ meses  
-
-**Destaques**:
-- 💬 Sistema de chat em tempo real
-- 📅 Gerenciamento de eventos
-- 📖 Integração com Bíblia completa
-- 🔐 Autenticação JWT segura
-- 📱 PWA com suporte offline
-- ⚡ 92/100 no Lighthouse
-
-[📖 Ver Documentação Completa →](American%20Teens%20Portifolio/README-PT.md)
-
----
-
-### 2. 🏢 GynConect - Sistema de Gestão Comercial
-
-**Sistema Web para equipes de vendas externas com modelo de consignação**
-
-[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](GynConect%20Portfolio/)
-
-**Stack**: PHP, MySQL, JavaScript Vanilla, PWA, REST API  
-**Status**: ✅ Produção — linha de versão 5.x  
-
-**Destaques**:
-- 📦 Consignação com visitas unificadas (acerto + reposição) e trilha de auditoria
-- 🛒 Vendas com assinatura digital e criação **offline** (IndexedDB + fila de sincronização)
-- 👆 Login biométrico (WebAuthn — Face ID / Touch ID / digital)
-- 💳 Cobrança recorrente com gateways Asaas e Mercado Pago (Pix, boleto), webhooks e cron de inadimplência
-- 🔔 Notificações Web Push nativas (VAPID / RFC 8291)
-- 📋 Atendimento com mapa Leaflet e geolocalização
-- 🔗 Integração servidor-a-servidor com o ERP interno (ErlDev Gestão)
-- 🔐 RBAC com 4 níveis + permissões finas
-- 📊 Financeiro com DRE simplificado e exportação nativa de PDF e Excel
-
-[📖 Ver Documentação Completa →](GynConect%20Portfolio/README.md)
-
----
-
-### 3. ⛪ Louvor ADE - Sistema de Escalas do Ministério de Louvor
-
-**PWA de gestão de escalas para o Ministério de Louvor da AD Expansul**
-
-[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](Louvor%20ADE%20Portfolio/)
-
-**Stack**: PHP, MySQL, JavaScript Vanilla, PWA  
-**Status**: ✅ Produção  
-
-**Destaques**:
-- 📅 Escala da semana atual e da próxima, montagem assistida por culto
-- ⚖️ Validação automática de regras de acúmulo de função (configuráveis em banco, não no código)
-- 👆 Login por biometria (WebAuthn) + sessão PHP + proteção CSRF
-- ✅ Confirmação de presença e aviso de indisponibilidade pelos membros
-- 🔔 Web Push quando o membro é escalado
-- 🛠 Painel Dev com permissões finas, feature flags e conformidade com a LGPD
-
-[📖 Ver Documentação Completa →](Louvor%20ADE%20Portfolio/README.md)
-
----
-
-### 4. 🗂 ErlDev Gestão - ERP Interno de Clientes, Sistemas e Pagamentos
-
-**Sistema interno para gestão de clientes, sites/sistemas entregues e controle de pagamentos**
-
-[![Ver Projeto](https://img.shields.io/badge/Ver_Projeto-007bff?style=for-the-badge)](ErlDev%20Gestao%20Portfolio/)
-
-**Stack**: PHP 8 (MVC), MySQL, JavaScript Vanilla, PWA  
-**Status**: ✅ Produção  
-
-**Destaques**:
-- 🔗 Sincronização servidor-a-servidor com os sistemas dos clientes (puxa assinatura e faturas do GynConect, controla remotamente)
-- 💳 Cobrança Pix via Mercado Pago (sem SDK)
-- ⏸ Suspensão automática por inadimplência com notificação Web Push em tempo real
-- 📡 Monitoramento de uptime dos sistemas e da saúde do servidor de hospedagem
-- 👆 Login biométrico (WebAuthn)
-- 🏗 MVC em PHP 8 puro em hospedagem compartilhada — sem Composer/Node no servidor
-
-[📖 Ver Documentação Completa →](ErlDev%20Gestao%20Portfolio/README.md)
-
----
-
-## 🛠 Habilidades Demonstradas
-
-### Frontend
-```
-✓ JavaScript (ES6+, Vanilla)
-✓ HTML5 & CSS3
-✓ Progressive Web Apps (PWA)
-✓ Service Workers & Cache API
-✓ Responsive Design
-✓ Single Page Applications (SPA)
-```
-
-### Backend
-```
-✓ PHP (OOP, 7.4+ / 8.x), MVC
-✓ API RESTful & integrações servidor-a-servidor
-✓ MySQL & Database Design + migrações versionadas
-✓ Autenticação por token, WebAuthn (biometria)
-✓ Gateways de pagamento (Pix/boleto) e webhooks
-✓ Web Push nativo (VAPID / RFC 8291)
-✓ Security Best Practices (PDO, RBAC, CSRF)
-```
-
-### DevOps & Tools
-```
-✓ Git & Version Control
-✓ Apache/Nginx & hospedagem compartilhada
-✓ GitHub Actions (cron agendado)
-✓ HTTPS/SSL Configuration
-✓ Monitoramento de uptime e saúde de servidor
-✓ Performance Optimization
-✓ Technical Documentation
-```
-
----
-
-## 📊 Estatísticas Gerais
-
-<div align="center">
-
-| Métrica | Valor |
-|---------|-------|
-| 📁 **Projetos Documentados** | 4 |
-| 💻 **Linhas de Código** | 60.000+ |
-| ⏱️ **Horas de Desenvolvimento** | 2.000+ |
-| 🚀 **Projetos em Produção** | 4 |
-| ⭐ **Pontuação Média Lighthouse** | 92/100 |
-
-</div>
-
----
-
-## 🎓 Sobre Mim
-
-Desenvolvedor Full-Stack apaixonado por criar soluções web modernas e eficientes. Especializado em Progressive Web Apps e arquiteturas RESTful, com foco em performance, segurança e experiência do usuário.
-
-### 💡 Áreas de Especialização
-
-- **Frontend Moderno**: JavaScript vanilla, PWAs, design responsivo
-- **Backend Robusto**: PHP, APIs RESTful, bancos de dados relacionais
-- **Segurança**: JWT, prevenção de XSS/SQL injection, HTTPS
-- **Performance**: Otimização de carregamento, caching, lazy loading
-- **Documentação**: Documentação técnica clara e abrangente
-
-### 🎯 Filosofia de Desenvolvimento
-
-> "Código limpo não é apenas sobre fazer funcionar - é sobre criar soluções mantíveis, escaláveis e seguras que resistem ao teste do tempo."
-
----
-
-## 📞 Entre em Contato
-
-Interessado em discutir projetos ou oportunidades?
-
-<div align="center">
-
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
+[![Website](https://img.shields.io/badge/erldev.com.br-0A0A0A?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.erldev.com.br)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lucas12teixeira)
+
+🇺🇸 English · [🇧🇷 Português](README-PT.md)
 
 </div>
 
-**Estou aberto para**:
-- 💼 Oportunidades de emprego full-time
-- 🤝 Projetos freelance
-- 💡 Colaborações em projetos interessantes
-- 📚 Consultoria técnica
+---
+
+## ⚡ At a Glance
+
+| | |
+|---|---|
+| 🚀 **7 projects**, 5 live in production | Real users: sales teams, a church ministry, a youth community, my own company |
+| 💻 **~165,000 lines** of hand-written code | PHP, JavaScript, CSS and SQL — counted from tracked source, excluding `vendor/` and libraries |
+| 🔁 **280+ commits** in 2025–2026 | Shipped, maintained and iterated in production, not just prototyped |
+| 🤖 **Applied AI** | Claude agent with 37 tools, human-in-the-loop confirmation, semantic search with cited sources |
+| 🔐 **Security by default** | WebAuthn/passkeys, TOTP 2FA, CSRF, RBAC, HMAC-verified webhooks, CSP/HSTS |
+| 📴 **Offline-first** | IndexedDB outboxes, idempotent sync with retry, installable PWAs on Android and iOS |
+
+> This repository is **portfolio documentation only** — source code is proprietary. Each folder documents one project in English and Portuguese, with architecture, security and the engineering decisions behind it.
 
 ---
 
-## 📜 Licença e Direitos Autorais
+## ⭐ Featured Projects
 
-© 2024-2026 Lucas (Erl Dev). Todos os direitos reservados.
+### 🤖 [ERL Cortex](ERL%20Cortex%20Portfolio/README-EN.md) — AI second brain + company management
+<img src="ERL%20Cortex%20Portfolio/assets/icons/icon.png" width="64" align="right" alt="ERL Cortex">
 
-### ⚠️ Aviso Importante
+Voice and text assistant built on **Claude with tool use** that also runs the operations and billing of a software company.
 
-- Este repositório contém apenas **documentação de portfólio**
-- O código-fonte dos projetos **NÃO está incluído**
-- Todos os projetos são propriedade do desenvolvedor
-- **Uso comercial não autorizado** sem permissão expressa
-- Para acesso ao código ou licenciamento, entre em contato
+- **37 tools** exposed to the model; financial and destructive actions require **human confirmation** and can be undone
+- **LLM gateway** with a fallback chain (Claude → Ollama / OpenAI-compatible) and a daily token cap
+- **Semantic search** (Voyage embeddings) with source-cited answers, graceful FULLTEXT fallback
+- Voice pipeline (Web Speech + server-side Whisper for iPhone), Obsidian-style notes, Pix billing, Web Push
+- **Zero dependencies**: Web Push (VAPID), AWS SigV4 and WebAuthn verification written in-house · **350+ automated checks**
 
-### 📄 Documentação
-
-A documentação neste repositório está disponível sob licença Creative Commons BY-NC-ND 4.0:
-- ✅ Você pode visualizar e compartilhar a documentação
-- ❌ Não pode modificar ou usar comercialmente
-- ❌ Não pode remover atribuição ao autor
+`PHP` `Claude API` `Embeddings` `PWA` `MySQL` · 🛠 In active development
 
 ---
 
-## 🔗 Navegação Rápida
+### 🏢 [GynConect](GynConect%20Portfolio/README-EN.md) — Sales & consignment management for field teams
+<img src="GynConect%20Portfolio/assets/icons/icon.png" width="64" align="right" alt="GynConect">
 
-### Por Tecnologia
+Production SPA + REST API + PWA used daily by external sales teams. Current line **v5.7**.
 
-- **PHP**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **JavaScript Vanilla**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **PWA**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **WebAuthn / Biometria**: [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **Pagamentos / Pix**: [GynConect](GynConect%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+- **Offline sales** with IndexedDB outbox, idempotency keys, automatic retry and a pending-sync screen
+- **Recurring billing** with Asaas and Mercado Pago (Pix, boleto), webhooks and a delinquency cron
+- **Biometric login** (WebAuthn) and native **Web Push** (VAPID / RFC 8291) without third-party push services
+- Server-to-server integration with an internal ERP; RBAC with 4 levels; native PDF/Excel export
 
-### Por Tipo
-
-- **Full-Stack**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **Comunidade / Social**: [American Teens](American%20Teens%20Portifolio/)
-- **Gestão Comercial**: [GynConect](GynConect%20Portfolio/)
-- **Gestão Interna / ERP**: [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
-- **Escalas / Ministério**: [Louvor ADE](Louvor%20ADE%20Portfolio/)
-
-### Por Status
-
-- **Produção**: [American Teens](American%20Teens%20Portifolio/) • [GynConect](GynConect%20Portfolio/) • [Louvor ADE](Louvor%20ADE%20Portfolio/) • [ErlDev Gestão](ErlDev%20Gestao%20Portfolio/)
+`PHP` `REST API` `Vanilla JS SPA` `PWA` `MySQL` · ✅ Production
 
 ---
 
-## 📈 Atualizações
+### 🏋️ [FitPersonal AI](FitPersonal%20AI%20Portfolio/README-EN.md) — Personalized strength-training PWA
+<img src="FitPersonal%20AI%20Portfolio/assets/icons/icon.png" width="64" align="right" alt="FitPersonal AI">
 
-Este portfólio está em constante evolução. Novos projetos e atualizações são adicionados regularmente.
+Generates personalized workout plans with an **in-house deterministic rule engine** — no paid AI APIs — and tracks every session.
 
-**Última atualização**: Setembro 2026 — GynConect atualizado (linha 5.x) e adição dos projetos Louvor ADE e ErlDev Gestão
+- **Safety gate**: health-risk answers stop plan generation and refer the user to a professional
+- **Versioned plans** (never overwritten) and compatible exercise swaps
+- 101 exercises, 39 tables, **67 test cases** covering IDOR, CSRF, XSS and SQL injection
+- Built for shared hosting: in-house rate limiter, SMTP client and WebAuthn (CBOR) — no framework
+
+`PHP` `Rule engine` `PWA` `MySQL` · 🧪 MVP
+
+---
+
+### More projects
+
+| Project | What it is | Highlights | Status |
+|---|---|---|---|
+| 🌟 [**American Teens**](American%20Teens%20Portifolio/README.md) | Community platform for a youth group | Real-time chat, events, full Bible integration, JWT auth, offline PWA | ✅ [Live](https://americateens.erldev.com.br) |
+| 🗂 [**ErlDev Gestão**](ErlDev%20Gestao%20Portfolio/README-EN.md) | Internal ERP for clients, delivered systems and payments | Server-to-server sync with client systems, Pix via Mercado Pago, auto-suspension on non-payment, uptime monitoring | ✅ Production |
+| ⛪ [**Louvor ADE**](Louvor%20ADE%20Portfolio/README-EN.md) | Worship-team scheduling PWA | Database-driven role-conflict rules, WebAuthn, CSRF, Web Push, feature flags, LGPD tools | ✅ Production |
+| 🌐 [**ErlDev Site**](ErlDev%20Site%20Portfolio/README-EN.md) | My company's website | Zero-dependency PHP 8, hand-written SMTP client, config-driven catalogue, accessible and SEO-ready | ✅ [Live](https://www.erldev.com.br) |
+
+---
+
+## 🛠 Tech Stack
+
+| Area | Technologies |
+|---|---|
+| **Backend** | PHP 7.4 / 8.x (OOP, MVC), REST APIs, PDO, MySQL / MariaDB, versioned migrations |
+| **Frontend** | JavaScript (ES6+, ES modules), SPA routing, HTML5, CSS3, responsive and accessible UI |
+| **AI** | Claude Messages API with tool use and streaming (SSE), embeddings and semantic search, Whisper transcription, multi-provider LLM gateway |
+| **PWA / Mobile** | Service Workers, IndexedDB, background sync, Web Push (VAPID), Web Share Target, TWA/APK |
+| **Security** | WebAuthn / passkeys, TOTP 2FA, CSRF, RBAC, rate limiting, HMAC webhooks, CSP / HSTS, LGPD privacy flows |
+| **Payments** | Mercado Pago and Asaas (Pix, boleto), webhooks, recurring billing |
+| **DevOps** | Git, GitHub Actions (scheduled jobs), Apache / `.htaccess`, shared hosting, uptime monitoring, S3/R2 backups |
+
+---
+
+## 🧭 How I Work
+
+- **Ship to real users.** Most of these systems run in production and are maintained after launch — offline edge cases, payment webhooks and iOS quirks included.
+- **Own the whole stack.** Database design, API, frontend, deployment, monitoring and documentation.
+- **Few dependencies, on purpose.** On shared hosting I write what is needed (Web Push, SMTP, WebAuthn, request signing) instead of pulling in heavy libraries.
+- **Safety around automation.** AI agents and payment flows get confirmation steps, audit trails and idempotency.
+
+---
+
+## 📬 Let's Talk
+
+Open to **full-time roles**, **freelance projects** and **technical collaborations**.
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/lucas12teixeira@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas12teixeira@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-lima-10218529a/)
+
+</div>
 
 ---
 
 <div align="center">
 
-### 🌟 Obrigado por Visitar!
+© 2024-2026 Lucas Lima (Erl Dev). Documentation in this repository is licensed under CC BY-NC-ND 4.0; source code of the projects is proprietary and not included.
 
-Se você achou meu trabalho interessante:
-- ⭐ Dê uma estrela neste repositório
-- 💬 Entre em contato para discutir oportunidades
-- 🔗 Conecte-se comigo no LinkedIn
-- 📧 Envie um email com suas ideias
-
-**Vamos construir algo incrível juntos! 🚀**
-
----
-
-Desenvolvido com ❤️ e ☕ por [Lucas (Erl Dev)](https://github.com/Lucas12teixeira/Portifolio-Projetos)
-
-*Transformando ideias em código, código em soluções*
+*Last updated: October 2026*
 
 </div>

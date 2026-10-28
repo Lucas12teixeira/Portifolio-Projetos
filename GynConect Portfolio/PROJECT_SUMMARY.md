@@ -62,7 +62,7 @@
 ### Frontend
 - **JavaScript Vanilla** — SPA sem frameworks, máxima performance e controle
 - **PWA com Service Worker** — auto-update e uso offline em campo
-- **Offline real** — IndexedDB com cache de GET e outbox de escrita; Sync Manager FIFO remapeia IDs temporários
+- **Offline real** — IndexedDB com cache de GET e outbox de escrita; Sync Manager FIFO remapeia IDs temporários, com retry automático, tela de pendências e chaves de idempotência (`Idempotency-Key`) contra duplicação em reenvios
 - **WebAuthn** — cerimônias de registro e login biométrico por dispositivo
 - **Leaflet** — mapa de atendimento com geolocalização, sem CDN
 - **Padrão IIFE/Module Revealing** — organização modular sem bundler
@@ -142,7 +142,7 @@
 | **Módulos** | 20+ módulos integrados |
 | **Domínios de API** | ~30 |
 | **Níveis de Acesso** | 4 + flag de cobrança + permissões finas |
-| **Migrações de Banco** | v1.x → v5.6 |
+| **Migrações de Banco** | v1.x → v5.7 |
 | **Gateways de Pagamento** | Asaas, Mercado Pago |
 | **Tipos de Estoque** | Central, por Vendedor, Consignação |
 | **Status de Venda** | Pendente → Confirmada → Entregue |
@@ -152,7 +152,7 @@
 
 ## 🎬 Pitch em 30 Segundos
 
-> "Desenvolvi o GynConect, um sistema web de gestão comercial completo para distribuidores com equipes de vendas externas. A plataforma controla clientes, estoque, vendas, consignação, comissões e financeiro — tudo em uma SPA com PHP e JavaScript Vanilla, funcionando como PWA com offline real (IndexedDB + fila de sincronização) e login por biometria. O sistema cobra a própria mensalidade via Pix e boleto (Asaas e Mercado Pago) com webhooks e cron de inadimplência, envia notificações Web Push, tem um mapa de atendimento com geolocalização e se integra por API ao meu ERP interno. Está em produção, na linha de versão 5.x, atendendo uma operação real."
+> "Desenvolvi o GynConect, um sistema web de gestão comercial completo para distribuidores com equipes de vendas externas. A plataforma controla clientes, estoque, vendas, consignação, comissões e financeiro — tudo em uma SPA com PHP e JavaScript Vanilla, funcionando como PWA com offline real (IndexedDB + fila de sincronização) e login por biometria. O sistema cobra a própria mensalidade via Pix e boleto (Asaas e Mercado Pago) com webhooks e cron de inadimplência, envia notificações Web Push, tem um mapa de atendimento com geolocalização e se integra por API ao meu ERP interno. Está em produção, na linha de versão 5.x (atualmente 5.7.12), atendendo uma operação real."
 
 ---
 
@@ -167,7 +167,7 @@
 📦  Módulos:     20+ integrados
 📄  Exportações: PDF + Excel (PHP nativo)
 🤖  Automação:   Cron diário via GitHub Actions
-🚀  Status:      Produção — v5.x
+🚀  Status:      Produção — v5.7.12
 ```
 
 ---

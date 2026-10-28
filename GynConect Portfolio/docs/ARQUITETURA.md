@@ -113,7 +113,9 @@ POST/PUT/DELETE offline → gravado no outbox com um ID temporário negativo (-1
 
 Ao reconectar, o Sync Manager:
   1. Lê o outbox em ordem (FIFO)
-  2. Reenvia cada requisição; até 5 tentativas por item
+  2. Reenvia cada requisição com `Idempotency-Key` (a mesma chave nos retries);
+     5xx é reenviado automaticamente a cada 2 min, 4xx fica "falhou" até o usuário
+     tentar de novo ou descartar na tela de pendências
   3. Mapeia o ID temporário → ID real retornado pelo servidor
   4. Substitui referências pendentes (ex.: itens de uma venda ainda não sincronizada)
 
@@ -242,7 +244,8 @@ Config
 - **Auditoria**: campos `criado_em` / `atualizado_em` nas tabelas principais e trilha em movimentações
 - **Soft delete**: registros desativados (status/ativo/finalizado) em vez de deletados
 - **Idempotência**: chaves únicas em `faturas (gateway, id_externo)`, `webhook_logs` e `notificacoes_cobranca`
-- **Migrações versionadas**: `database/migracao_v*.sql` de v1.x a v5.6
+- **Idempotência de escrita**: tabela `idempotencia_requisicoes` guarda a resposta junto da escrita (mesma transação); chave repetida devolve a resposta salva
+- **Migrações versionadas**: `database/migracao_v*.sql` de v1.x a v5.7
 
 ---
 

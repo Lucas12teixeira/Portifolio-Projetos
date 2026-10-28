@@ -20,8 +20,32 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 - ✅ Integração servidor-a-servidor com o ErlDev Gestão
 - ✅ Financeiro redesenhado (DRE simplificado, 6 KPIs)
 - ✅ Cron diário de inadimplência via GitHub Actions
+- ✅ Offline resiliente — chaves de idempotência, retry automático e tela de pendências de sincronização
 
 ---
+
+### v5.7 — Offline resiliente, idempotência e vendas sem trava de estoque (versão atual: 5.7.12)
+
+> Mudanças desde 03/09/2026.
+
+**Adicionado**
+- **Idempotência em requisições de escrita** — o frontend envia `Idempotency-Key` em toda requisição não-GET (a chave é criada uma vez por ação e reaproveitada nos retries); o backend grava a resposta na mesma transação da escrita e devolve a resposta salva em vez de duplicar. Aplicado a vendas, finalização de visitas e cadastro de clientes. Nova tabela `idempotencia_requisicoes` (migração v5.7)
+- **Tela de pendências de sincronização** — botão de sincronização na barra superior com badge e modal listando os itens pendentes, com ações "Tentar novamente" e "Descartar"
+- **Retry automático a cada 2 minutos** e toast-resumo após cada sincronização, com avisos nas tentativas 5, 10 e 15
+- **Movimentação de estoque com vários itens** em uma única transação (carrinho "Adicionar"); o formato de item único continua suportado
+- **"Marcar visita"** no Atendimento — registra visita sem venda e atualiza a data da última visita do cliente, validando o vínculo com o vendedor
+- **Visualizador de pedido em PDF** com botões Fechar e Compartilhar; o PDF ganha coluna de **lucro do cliente** por unidade e inclui itens de consignação
+- Novas regras de cache de API no Service Worker: `configuracoes` (1 h), `atendimento` (30 min) e `termos` (30 min)
+
+**Alterado**
+- **Vendas não são mais bloqueadas por estoque insuficiente** — o saldo pode ficar negativo (visível nos relatórios) até um ajuste de estoque
+- Itens offline com erro 5xx são reenviados sem limite de tentativas; erros 4xx ficam como "falhou" aguardando ação do usuário (antes, itens eram descartados após 5 tentativas)
+- Geração do PDF de pedido refatorada: construtor de PDF nativo e autenticação/consulta compartilhados entre o PDF binário e o visualizador
+- Venda com pagamento a prazo (boleto, pendente, prazo) exige assinatura do cliente, inclusive para Consumidor Final
+
+**Corrigido**
+- Navegação offline não cai mais na tela de assinatura suspensa: GET sem cópia em cache retorna "Sem conexão", e o 503 só conta como suspensão com o dispositivo online e em duas ocorrências seguidas
+- Envio duplicado (duplo clique) no salvamento de cliente, venda e visita, com travas de envio
 
 ### v5.6 — Notificações de cobrança multi-destinatário
 
